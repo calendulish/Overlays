@@ -1,0 +1,13 @@
+[Unit]
+Description=CopyDaemon
+After=local-fs.target network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/copy/copyconsole
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

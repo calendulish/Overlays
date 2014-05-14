@@ -1,0 +1,3 @@
+#!/bin/sh
+cd "/usr/share/openbox-menu/"
+python ./obmenu.py
