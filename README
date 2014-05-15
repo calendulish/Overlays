@@ -1,1 +1,11 @@
 Gentoo Overlays © 2014 Lara Maia <lara@craft.net.br>
+
+Current Ebuilds:
+
+net-misc
+  +-- copy-daemon
+sys-apps
+  +-- lstree
+x11-misc
+  +-- bmpanel2
+  +-- openbox-menu
