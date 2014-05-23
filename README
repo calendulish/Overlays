@@ -11,3 +11,4 @@ sys-apps
 x11-misc
   +-- bmpanel2
   +-- openbox-menu
+  +-- simple-autostarter
