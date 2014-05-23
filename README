@@ -2,6 +2,8 @@ Gentoo Overlays © 2014 Lara Maia <lara@craft.net.br>
 
 Current Ebuilds:
 
+app-editors
+  +-- geany-checkpath
 net-misc
   +-- copy-daemon
 sys-apps
