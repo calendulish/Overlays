@@ -13,4 +13,6 @@ www-client
 x11-misc
   +-- bmpanel2
   +-- openbox-menu
+  +-- plank-simple-conf
+  +-- plank-themes
   +-- simple-autostarter
