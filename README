@@ -10,6 +10,8 @@ sys-apps
   +-- lstree
 www-client
   +-- firefox-bin
+www-misc
+  +-- freedns-updater
 x11-misc
   +-- bmpanel2
   +-- openbox-menu
