@@ -6,12 +6,11 @@ app-editors
   +-- geany-checkpath
 net-misc
   +-- copy-daemon
+  +-- freedns-updater
 sys-apps
   +-- lstree
 www-client
   +-- firefox-bin
-www-misc
-  +-- freedns-updater
 x11-misc
   +-- bmpanel2
   +-- openbox-menu
