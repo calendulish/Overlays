@@ -18,3 +18,5 @@ x11-misc
   +-- plank-themes
   +-- simple-autostarter
   +-- cairo-compmgr
+dev-util
+  +-- repo   
