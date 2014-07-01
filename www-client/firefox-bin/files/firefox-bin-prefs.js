@@ -18,6 +18,10 @@ pref("browser.sessionhistory.max_entries",      10);
 
 pref("network.http.pipelining",                 true);
 pref("network.proxy.pipelining",                true);
-pref("network.http.pipelining.maxrequrests",    8);
+pref("network.http.pipelining.maxrequrests",    6);
 pref("network.http.max-connections",            96);
 pref("network.http.max-connections-per-server", 32);
+pref("network.http.max-persistent-connections-per-proxy", 16);
+pref("network.http.max-persistent-connections-per-server", 8);
+
+pref("network.disableIPv6", true);
