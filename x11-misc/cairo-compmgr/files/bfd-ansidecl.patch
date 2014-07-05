@@ -1,6 +1,6 @@
 diff -Naur src/cairocompmgr/src/ccm-debug.c src/cairocompmgr-patched/src/ccm-debug.c
---- src/cairocompmgr/src/ccm-debug.c	2014-05-30 14:08:02.434448854 +0200
-+++ src/cairocompmgr-patched/src/ccm-debug.c	2014-05-30 14:13:57.447482643 +0200
+--- src/cairocompmgr/src/ccm-debug.c    2014-05-30 14:08:02.434448854 +0200
++++ src/cairocompmgr-patched/src/ccm-debug.c    2014-05-30 14:13:57.447482643 +0200
 @@ -55,8 +55,9 @@
  #include <stdio.h>
  #include <stdlib.h>

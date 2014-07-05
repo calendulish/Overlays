@@ -15,11 +15,11 @@ KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 
 DEPEND="dev-vcs/git
         net-misc/curl
-		=dev-lang/python-2*"
+        =dev-lang/python-2*"
 RDEPEND="${DEPEND}"
 
 src_prepare() {
-	python_convert_shebangs 2 ${PN} 
+    python_convert_shebangs 2 ${PN} 
 }
 
 src_install() {

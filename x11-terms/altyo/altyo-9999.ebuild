@@ -16,19 +16,19 @@ IUSE=""
 
 DEPEND=">=x11-libs/vte-0.30.1
         >=x11-libs/gtk+-3.4
-		>=dev-libs/glib-2.32
-		>=dev-lang/vala-0.16"
+        >=dev-libs/glib-2.32
+        >=dev-lang/vala-0.16"
 RDEPEND="${DEPEND}"
 
 src_prepare() {
-	local valac=$(find /usr/bin/valac-*)
-	sed "s|valac|$valac|g" -i Makefile
+    local valac=$(find /usr/bin/valac-*)
+    sed "s|valac|$valac|g" -i Makefile
 }
 
 src_compile() {
-	emake
+    emake
 }
 
 src_install() {
-	emake DESTDIR="${D}" install 
+    emake DESTDIR="${D}" install 
 }

@@ -41,7 +41,7 @@ IUSE="selinux startup-notification upx"
 
 DEPEND="app-arch/unzip
         selinux? ( sec-policy/selinux-mozilla )
-		upx? ( app-arch/upx-bin )"
+        upx? ( app-arch/upx-bin )"
 
 RDEPEND="dev-libs/dbus-glib
          virtual/freedesktop-icon-theme
@@ -167,10 +167,10 @@ pkg_postinst() {
     gnome2_icon_cache_update
 
     # Compress binary if requested
-	if use upx; then
-		einfo Compressing firefox binary
-		upx --best /opt/firefox/firefox
-	fi
+    if use upx; then
+        einfo Compressing firefox binary
+        upx --best /opt/firefox/firefox
+    fi
 }
 
 pkg_postrm() {

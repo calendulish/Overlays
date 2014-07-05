@@ -17,8 +17,8 @@ DEPENDS="python"
 RDEPENDS="$DEPENDS"
 
 src_install(){
-	exeinto /usr/bin
-	newexe freedns-updater.py freedns-updater
-	insinto /etc
-	newins freedns.conf.example freedns.conf
+    exeinto /usr/bin
+    newexe freedns-updater.py freedns-updater
+    insinto /etc
+    newins freedns.conf.example freedns.conf
 }

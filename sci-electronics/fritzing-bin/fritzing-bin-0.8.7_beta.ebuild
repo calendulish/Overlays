@@ -20,27 +20,27 @@ IUSE="amd64 x64"
 if use amd64; then
     LARCH=AMD64
 else
-	LARCH=I386
+    LARCH=I386
 fi
 
 S="${WORKDIR}"/${PN/-bin/}-${PV/_beta/b}.linux.${LARCH}
 
 QA_PREBUILT="/opt/${PN}/lib/libQtCore.so.4
-			 /opt/${PN}/lib/libQtSql.so.4
-			 /opt/${PN}/lib/libQtXml.so.4
-			 /opt/${PN}/lib/imageformats/libqjpeg.so
-			 /opt/${PN}/lib/libQtGui.so.4
-			 /opt/${PN}/lib/libQtSvg.so.4
-			 /opt/${PN}/lib/libQtNetwork.so.4
-			 /opt/${PN}/lib/sqldrivers/libqsqlite.so
-			 /opt/${PN}/lib/libQtXmlPatterns.so.4"
+             /opt/${PN}/lib/libQtSql.so.4
+             /opt/${PN}/lib/libQtXml.so.4
+             /opt/${PN}/lib/imageformats/libqjpeg.so
+             /opt/${PN}/lib/libQtGui.so.4
+             /opt/${PN}/lib/libQtSvg.so.4
+             /opt/${PN}/lib/libQtNetwork.so.4
+             /opt/${PN}/lib/sqldrivers/libqsqlite.so
+             /opt/${PN}/lib/libQtXmlPatterns.so.4"
 
 src_install() {
     dodir /opt/fritzing
     mv "${S}" "${D}"/opt/${PN} || die
 
     dodir /usr/bin/
-	dosym /opt/${PN}/Fritzing /usr/bin/${PN}
+    dosym /opt/${PN}/Fritzing /usr/bin/${PN}
 
     # revdep-rebuild entry
     insinto /etc/revdep-rebuild

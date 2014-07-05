@@ -19,24 +19,24 @@ RDEPEND="sys-fs/fuse
          systemd? ( sys-apps/systemd )"
 
 if use amd64 || use ia64; then
-	S="$WORKDIR/${PN%%-*}"/x86_64
+    S="$WORKDIR/${PN%%-*}"/x86_64
 elif use x86; then
-	S="$WORKDIR/${PN%%-*}"/x86
+    S="$WORKDIR/${PN%%-*}"/x86
 else
-	S="$WORKDIR/${PN%%-*}"/armv6h
+    S="$WORKDIR/${PN%%-*}"/armv6h
 fi
 
 src_install() {
-	if use systemd; then
-		systemd_dounit "$FILESDIR"/copy-daemon.service
-	fi
+    if use systemd; then
+        systemd_dounit "$FILESDIR"/copy-daemon.service
+    fi
 
-	insinto /opt/copy
-	doins ca-bundle.crt libBrt.so libAgentSync.so libCloudSync.so
+    insinto /opt/copy
+    doins ca-bundle.crt libBrt.so libAgentSync.so libCloudSync.so
 
-	exeinto /opt/copy
-	doenvd "$FILESDIR"/20copy-daemon
-	
-	newexe CopyCmd copycmd
-	newexe CopyConsole copyconsole
+    exeinto /opt/copy
+    doenvd "$FILESDIR"/20copy-daemon
+    
+    newexe CopyCmd copycmd
+    newexe CopyConsole copyconsole
 }
