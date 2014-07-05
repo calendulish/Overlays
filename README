@@ -20,5 +20,7 @@ x11-misc
   +-- plank-themes
   +-- simple-autostarter
   +-- cairo-compmgr
+x11-terms
+  +-- altyo
 dev-util
   +-- repo   
