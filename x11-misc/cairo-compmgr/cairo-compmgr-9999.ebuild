@@ -15,32 +15,32 @@ SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 
 DEPEND="=x11-libs/gtk+-2*
-		>=x11-libs/cairo-1.4
-        >=dev-lang/vala-0.24
-		x11-libs/libSM
-		gnome-base/gconf"
+        >=x11-libs/cairo-1.4
+        $(vala_depend)
+        x11-libs/libSM
+        gnome-base/gconf"
 RDEPEND="${DEPEND}"
 
 src_prepare() {
-	sed 's/libvala-0.18/libvala-0.24/' -i configure.ac
-	sed 's/libvala-0.18/libvala-0.24/' -i vapi/cairo-compmgr.deps
+    sed 's/libvala-0.18/libvala-0.24/' -i configure.ac
+    sed 's/libvala-0.18/libvala-0.24/' -i vapi/cairo-compmgr.deps
 
-	epatch "$FILESDIR"/fix-compilation-errors.patch
-	epatch "$FILESDIR"/bfd-ansidecl.patch
+    epatch "$FILESDIR"/fix-compilation-errors.patch
+    epatch "$FILESDIR"/bfd-ansidecl.patch
 
-	vala_src_prepare
+    vala_src_prepare
 }
 
 pkg_setup() {
-	G2CONF="$G2CONF --enable-gconf"
+    G2CONF="$G2CONF --enable-gconf"
 }
 
 src_configure() {
-	eautoreconf
-	econf --prefix=/usr LIBS="-ldl -lgmodule-2.0 -lm -lz"
+    eautoreconf
+    econf --prefix=/usr LIBS="-ldl -lgmodule-2.0 -lm -lz"
 }
 
 src_compile() {
-	# parallel build broken
-	emake -j1
+    # parallel build broken
+    emake -j1
 }
