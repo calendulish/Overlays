@@ -4,7 +4,7 @@
 
 EAPI=5
 
-DESCRIPTION="Geany wrapper for autodetect permissions/root"
+DESCRIPTION="Gvim wrapper for autodetect permissions/root"
 HOMEPAGE="http://lara.craft.net.br"
 LICENSE="GPL-3"
 
