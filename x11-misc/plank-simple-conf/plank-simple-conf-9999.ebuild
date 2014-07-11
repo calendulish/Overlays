@@ -17,7 +17,8 @@ SLOT=0
 
 DEPEND="dev-lang/vala
         x11-libs/bamf
-        x11-libs/gtk+:3"
+        x11-libs/gtk+:3
+        dev-vcs/git"
 
 RDEPEND="$DEPEND
          pantheon-base/plank"

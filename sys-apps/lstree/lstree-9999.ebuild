@@ -15,6 +15,8 @@ KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 
 SLOT=0
 
+DEPEND="dev-vcs/git"
+
 src_install() {
     exeinto /usr/bin
     doexe lstree

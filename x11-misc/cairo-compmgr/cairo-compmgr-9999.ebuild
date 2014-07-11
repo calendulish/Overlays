@@ -14,12 +14,13 @@ LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 
-DEPEND="=x11-libs/gtk+-2*
-        >=x11-libs/cairo-1.4
-        $(vala_depend)
-        x11-libs/libSM
-        gnome-base/gconf"
-RDEPEND="${DEPEND}"
+RDEPEND="=x11-libs/gtk+-2*
+         >=x11-libs/cairo-1.4
+         $(vala_depend)
+         x11-libs/libSM
+         gnome-base/gconf"
+DEPEND="${RDEPEND}
+        dev-vcs/git"
 
 src_prepare() {
     sed 's/libvala-0.18/libvala-0.24/' -i configure.ac

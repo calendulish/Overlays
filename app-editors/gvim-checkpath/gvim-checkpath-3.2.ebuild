@@ -15,7 +15,7 @@ KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 SLOT=0
 
 RDEPEND="app-admin/sudo
-		 app-editors/gvim
+         app-editors/gvim
         "
 
 S="$DISTDIR"

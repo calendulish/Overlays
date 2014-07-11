@@ -14,11 +14,12 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=">=x11-libs/vte-0.30.1
-        >=x11-libs/gtk+-3.4
-        >=dev-libs/glib-2.32
-        >=dev-lang/vala-0.16"
-RDEPEND="${DEPEND}"
+RDEPEND=">=x11-libs/vte-0.30.1
+         >=x11-libs/gtk+-3.4
+         >=dev-libs/glib-2.32
+         >=dev-lang/vala-0.16"
+DEPEND="${RDEPEND}
+        dev-vcs/git"
 
 src_prepare() {
     local valac=$(find /usr/bin/valac-*)

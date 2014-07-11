@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=5
-inherit git-r3
+inherit git-r3 distutils
 
 DESCRIPTION="Autostarter your programs with the session"
 HOMEPAGE="https://github.com/LaraCraft304/Simple-autostarter"
@@ -15,6 +15,14 @@ KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 
 SLOT=0
 
+DEPEND="dev-vcs/git"
+RDEPEND="=dev-lang/python-3*
+         =dev-python/pygobject-3*"
+
+src_compille() {
+    distutils_src_compile
+}
+
 src_install() {
-    ./install.sh "$D"
+    distutils_src_install
 }

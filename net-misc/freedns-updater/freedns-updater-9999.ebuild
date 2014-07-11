@@ -13,8 +13,8 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 
-DEPENDS="python"
-RDEPENDS="$DEPENDS"
+DEPEND="dev-vcs/git"
+RDEPEND="dev-lang/python:3"
 
 src_install(){
     exeinto /usr/bin

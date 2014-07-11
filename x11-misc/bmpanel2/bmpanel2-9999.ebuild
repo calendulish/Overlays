@@ -16,14 +16,15 @@ SLOT=0
 KEYWORDS="~amd64 ~x86"
 IUSE="python doc"
 
-DEPEND="x11-libs/pango
-        x11-libs/cairo
-        x11-libs/libX11
-        python? ( ${PYTHON_DEPS} dev-python/pygtk[${PYTHON_USEDEP}] )
-        media-fonts/dejavu
-        dev-libs/glib
-        doc? ( app-text/docbook-xsl-stylesheets app-text/asciidoc )"
-RDEPEND="${DEPEND}"
+DEPEND="python? ( ${PYTHON_DEPS} dev-python/pygtk[${PYTHON_USEDEP}] )
+        doc? ( app-text/docbook-xsl-stylesheets app-text/asciidoc )
+        dev-util/cmake
+        dev-vcs/git"
+
+RDEPEND="${DEPEND}
+         x11-libs/libXext
+         x11-libs/pango
+         media-fonts/dejavu"
 
 DOCS=( INSTALL COPYING )
 CMAKE_IN_SOURCE_BUILD="1"

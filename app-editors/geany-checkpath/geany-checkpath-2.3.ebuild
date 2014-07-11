@@ -16,6 +16,9 @@ SLOT=0
 
 S="$DISTDIR"
 
+RDEPEND="dev-util/geany
+         app-admin/sudo"
+
 src_install() {
     exeinto /usr/bin
     newexe geany-checkpath.sh geany_checkpath

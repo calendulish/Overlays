@@ -17,6 +17,9 @@ SLOT=0
 
 S="$WORKDIR"/$P/themes-repo/Themes
 
+DEPEND="dev-vcs/git"
+RDEPEND="pantheon-base/plank"
+
 src_prepare() {
     # Pantheon already exists in x11-themes/plank-theme-pantheon on elementary overlay.
     rm -rf Pantheon || exit 1
