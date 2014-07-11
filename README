@@ -4,6 +4,7 @@ Current Ebuilds:
 
 app-editors
   +-- geany-checkpath
+  +-- gvim-checkpath
 net-misc
   +-- copy-daemon
   +-- freedns-updater
