@@ -40,3 +40,22 @@ src_install() {
     newexe CopyCmd copycmd
     newexe CopyConsole copyconsole
 }
+
+pkg_postinst() {
+	ewarn "The user must be validated for the first time."
+	ewarn "To do that, execute this command as root:"
+	ewarn " "
+	ewarn "/opt/copy/copyconsole -u=<Copy email> -r=/home/<user>/Copy -p=<Copy pass>"
+	ewarn " "
+	ewarn "When copyconsole replies with 'press enter to exit', you can close copyconsole."
+	ewarn "After that, you are ready to user systemd services for start copyconsole:"
+	ewarn " "
+	ewarn "systemctl enable copy-daemon < enable on boot"
+	ewarn "systemctl start copy-daemon < start service"
+	ewarn " "
+	ewarn "You must restart your session for include copy tools into your PATH"
+}
+
+pkg_postrm() {
+	ewarn "Remove /root/.copy folder for complete uninstall"
+}
