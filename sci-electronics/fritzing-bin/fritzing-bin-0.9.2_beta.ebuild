@@ -3,6 +3,7 @@
 # $Header: $
 
 EAPI="5"
+inherit eutils
 
 DESCRIPTION="Electronic Design Automation"
 
@@ -25,17 +26,26 @@ fi
 
 S="${WORKDIR}"/${PN/-bin/}-${PV/_beta/b}.linux.${LARCH}
 
-QA_PREBUILT="/opt/${PN}/lib/libQtCore.so.4
-             /opt/${PN}/lib/libQtSql.so.4
-             /opt/${PN}/lib/libQtXml.so.4
-             /opt/${PN}/lib/imageformats/libqjpeg.so
-             /opt/${PN}/lib/libQtGui.so.4
-             /opt/${PN}/lib/libQtSvg.so.4
-             /opt/${PN}/lib/libQtNetwork.so.4
+QA_PREBUILT="/opt/${PN}/lib/libQt5Sql.so.5
+             /opt/${PN}/lib/libQt5Concurrent.so.5
+             /opt/${PN}/lib/libQt5Gui.so.5
+             /opt/${PN}/lib/libQt5DBus.so.5
+             /opt/${PN}/lib/libQt5Xml.so.5
+             /opt/${PN}/lib/libQt5PrintSupport.so.5
+             /opt/${PN}/lib/libQt5XmlPatterns.so.5
+             /opt/${PN}/lib/libQt5Core.so.5
+             /opt/${PN}/lib/libQt5SerialPort.so.5
+             /opt/${PN}/lib/libQt5Network.so.5
+             /opt/${PN}/lib/platforms/libqxcb.so
+             /opt/${PN}/lib/libQt5Widgets.so.5
+             /opt/${PN}/lib/libQt5Svg.so.5
              /opt/${PN}/lib/sqldrivers/libqsqlite.so
-             /opt/${PN}/lib/libQtXmlPatterns.so.4"
+             /opt/${PN}/lib/imageformats/libqjpeg.so"
 
 src_install() {
+	doicon "$FILESDIR"/$PN.png
+	domenu "$FILESDIR"/$PN.desktop
+
     dodir /opt/fritzing
     mv "${S}" "${D}"/opt/${PN} || die
 

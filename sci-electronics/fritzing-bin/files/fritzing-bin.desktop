@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Fritzing (Binary Version)
+GenericName=Fritzing
+Comment=Electronic Design Automation software
+Exec=fritzing-bin
+Icon=fritzing-bin
+Terminal=false
+Type=Application
+Categories=Development;IDE;Electronics;
+X-SuSE-translate=false
