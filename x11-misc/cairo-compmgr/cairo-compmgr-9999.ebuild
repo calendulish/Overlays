@@ -23,8 +23,8 @@ DEPEND="${RDEPEND}
         dev-vcs/git"
 
 src_prepare() {
-    sed 's/libvala-0.18/libvala-0.24/' -i configure.ac
-    sed 's/libvala-0.18/libvala-0.24/' -i vapi/cairo-compmgr.deps
+    sed "s/libvala-0.18/libvala-$(vala_best_api_version)/" -i configure.ac
+    sed "s/libvala-0.18/libvala-$(vala_best_api_version)/" -i vapi/cairo-compmgr.deps
 
     epatch "$FILESDIR"/fix-compilation-errors.patch
     epatch "$FILESDIR"/bfd-ansidecl.patch
