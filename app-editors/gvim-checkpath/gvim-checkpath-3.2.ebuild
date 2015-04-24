@@ -8,7 +8,7 @@ DESCRIPTION="Gvim wrapper for autodetect permissions/root"
 HOMEPAGE="http://lara.craft.net.br"
 LICENSE="GPL-3"
 
-SRC_URI="http://lara.craft.net.br/gvim-checkpath.sh"
+SRC_URI="http://web.craft.net.br/downloads/gvim-checkpath.sh"
 
 KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 
