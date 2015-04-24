@@ -1,4 +1,4 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Lara Maia <lara@craft.net.br> 2015
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 

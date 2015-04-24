@@ -1,4 +1,4 @@
-# Copyright (C) 2014 Lara Maia <lara@craft.net.br>
+# Lara Maia <lara@craft.net.br> 2015
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 

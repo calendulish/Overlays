@@ -1,4 +1,4 @@
-# Copyright 2014 Fernando Manfredi <blackice@craft.net.br>
+# Fernando Manfredi <blackice@craft.net.br> 2015
 # Distributed under the terms of the GNU General Public License
 # $Header: $
 

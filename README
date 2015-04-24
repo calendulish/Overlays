@@ -1,4 +1,4 @@
-Gentoo Overlays © 2014 Lara Maia <lara@craft.net.br>
+Gentoo Overlays © 2015 Lara Maia <lara@craft.net.br>
 
 Current Ebuilds:
 
@@ -6,21 +6,14 @@ app-editors
   +-- geany-checkpath
   +-- gvim-checkpath
 net-misc
-  +-- copy-daemon
-  +-- freedns-updater
   +-- nullidentdmod
 sci-electronics
   +-- fritzing-bin
 sys-apps
   +-- lstree
-www-client
-  +-- firefox-bin
 x11-misc
   +-- bmpanel2
   +-- openbox-menu
-  +-- plank-simple-conf
-  +-- plank-themes
-  +-- simple-autostarter
   +-- cairo-compmgr
 x11-terms
   +-- altyo
