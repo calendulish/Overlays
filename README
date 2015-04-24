@@ -10,6 +10,7 @@ net-misc
 sci-electronics
   +-- fritzing-bin
 sys-fs
+  +-- cdf
   +-- lstree
 x11-misc
   +-- bmpanel2
