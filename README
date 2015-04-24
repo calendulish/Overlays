@@ -9,7 +9,7 @@ net-misc
   +-- nullidentdmod
 sci-electronics
   +-- fritzing-bin
-sys-apps
+sys-fs
   +-- lstree
 x11-misc
   +-- bmpanel2
