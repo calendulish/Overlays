@@ -1,13 +1,13 @@
 <repositories version="1.0">
   <repo quality="experimental" status="unofficial">
-    <name>laracraft304</name>
-    <description lang="en">LaraCraft304's personal overlay</description>
-    <homepage>https://github.com/PessoalProjects/Overlays</homepage>
+    <name>laracraft93</name>
+    <description lang="en">LaraCraft93's personal overlay</description>
+    <homepage>https://github.com/LaraCraft93/Overlays</homepage>
     <owner type="person">
       <email>lara@craft.net.br</email>
       <name>Lara Maia</name>
     </owner>
-    <source type="git">git://github.com/PessoalProjects/Overlays.git</source>
-    <feed>https://github.com/PessoalProjects/Overlays/commits/master.atom</feed>
+    <source type="git">git://github.com/LaraCraft93/Overlays.git</source>
+    <feed>https://github.com/LaraCraft93/Overlays/commits/master.atom</feed>
   </repo>
 </repositories>
