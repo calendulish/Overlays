@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND=">=x11-libs/vte-0.30.1
+RDEPEND="x11-libs/vte:2.91[introspection,vala]
          >=x11-libs/gtk+-3.4
          >=dev-libs/glib-2.32
          >=dev-lang/vala-0.16"
