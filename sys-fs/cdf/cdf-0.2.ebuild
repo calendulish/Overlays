@@ -15,7 +15,6 @@ KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 SLOT=0
 
 RDEPEND="sys-libs/glibc"
-DEPEND="dev-vcs/git"
 
 src_configure() {
 	./configure --prefix=/usr
