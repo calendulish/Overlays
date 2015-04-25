@@ -2,6 +2,8 @@ Gentoo Overlays © 2015 Lara Maia <lara@craft.net.br>
 
 Current Ebuilds:
 
+app-admin
+  +-- backup-conf
 app-editors
   +-- geany-checkpath
   +-- gvim-checkpath
