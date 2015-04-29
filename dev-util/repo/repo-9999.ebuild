@@ -3,7 +3,9 @@
 # $Header: $
 
 EAPI=5
-inherit git-r3 python
+
+PYTHON_COMPAT=( python2_7 )
+inherit git-r3 python-single-r1
 
 DESCRIPTION="The Google repo tool"
 HOMEPAGE="http://code.google.com/p/git-repo/"
@@ -13,13 +15,14 @@ LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 
-DEPEND="dev-vcs/git
-        net-misc/curl
-        =dev-lang/python-2*"
-RDEPEND="${DEPEND}"
+RDEPEND="dev-vcs/git
+         ${PYTHON_DEPS}"
+DEPEND="${RDEPEND}
+        net-misc/curl"
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 src_prepare() {
-    python_convert_shebangs 2 ${PN} 
+    python_fix_shebang ${PN}
 }
 
 src_install() {
