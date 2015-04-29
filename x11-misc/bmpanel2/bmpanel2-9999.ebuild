@@ -16,12 +16,11 @@ SLOT=0
 KEYWORDS="~amd64 ~x86"
 IUSE="python doc"
 
-DEPEND="python? ( ${PYTHON_DEPS} dev-python/pygtk[${PYTHON_USEDEP}] )
-        doc? ( app-text/docbook-xsl-stylesheets app-text/asciidoc )
+DEPEND="doc? ( app-text/docbook-xsl-stylesheets app-text/asciidoc )
         dev-util/cmake
         dev-vcs/git"
 
-RDEPEND="${DEPEND}
+RDEPEND="python? ( ${PYTHON_DEPS} dev-python/pygtk[${PYTHON_USEDEP}] )
          x11-libs/libXext
          x11-libs/pango
          media-fonts/dejavu"

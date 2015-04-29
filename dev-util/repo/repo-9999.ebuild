@@ -11,7 +11,7 @@ DESCRIPTION="The Google repo tool"
 HOMEPAGE="http://code.google.com/p/git-repo/"
 EGIT_REPO_URI="https://gerrit.googlesource.com/git-repo"
 
-LICENSE=""
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 

@@ -9,14 +9,13 @@ DESCRIPTION="Electronic Design Automation"
 
 SRC_URI="${SRC_URI}
          amd64? ( http://fritzing.org/download/${PV/_beta/b}/linux-64bit/${PN%-*}-${PV/_beta/b}.linux.AMD64.tar.bz2 )
-         x64? ( http://fritzing.org/download/${PV/_beta/b}/linux-32bit/${PN%-*}-${PV/_beta/b}.linux.i386.tar.bz2 )"
+         x86? ( http://fritzing.org/download/${PV/_beta/b}/linux-32bit/${PN%-*}-${PV/_beta/b}.linux.i386.tar.bz2 )"
 
 HOMEPAGE="http://www.fritzing.org"
 
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
 LICENSE="CC-BY-SA-3.0 GPL-2 GPL-3"
-IUSE="amd64 x64"
 
 if use amd64; then
     LARCH=AMD64

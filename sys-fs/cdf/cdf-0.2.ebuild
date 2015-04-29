@@ -6,7 +6,7 @@ EAPI=5
 
 DESCRIPTION="A colorized df utility"
 HOMEPAGE="http://sourceforge.net/projects/bmp-plugins.berlios/"
-LICENSE="GPL"
+LICENSE="GPL-2"
 
 SRC_URI="http://downloads.sourceforge.net/project/bmp-plugins.berlios/$PN-$PV.tar.gz"
 

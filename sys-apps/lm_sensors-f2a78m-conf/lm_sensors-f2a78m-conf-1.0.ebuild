@@ -4,7 +4,7 @@ EAPI=5
 
 DESCRIPTION="libsensors3 configuration file for the GIGABYTE GA-F2a78M-D3H"
 HOMEPAGE="http://lara.craft.net.br"
-LICENSE="GPL"
+LICENSE="GPL-3"
 
 SRC_URI="http://lara.craft.net.br/f2a78m.conf"
 
@@ -19,13 +19,13 @@ S="$DISTDIR"
 src_install() {
 	insinto /etc/conf.d/
 	doins $FILESDIR/lm_sensors
-	
+
 	insinto /etc/modules-load.d/
 	newins $FILESDIR/load f2a78m_sensors.conf
-	
+
 	insinto /etc/modprobe.d/
 	newins $FILESDIR/modprobe f2a78m_sensors.conf
-	
+
 	insinto /etc/sensors.d/
 	doins f2a78m.conf
 }

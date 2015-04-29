@@ -11,6 +11,8 @@ net-misc
   +-- nullidentdmod
 sci-electronics
   +-- fritzing-bin
+sys-app
+  +-- lm_sensors-f2a78m-conf
 sys-fs
   +-- cdf
   +-- lstree
