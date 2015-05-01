@@ -7,7 +7,12 @@ app-admin
 app-editors
   +-- geany-checkpath
   +-- gvim-checkpath
+app-text
+  +-- lstree
+dev-util
+  +-- repo
 net-misc
+  +-- megasync-bin
   +-- nullidentdmod
 sci-electronics
   +-- fritzing-bin
@@ -15,12 +20,9 @@ sys-app
   +-- lm_sensors-f2a78m-conf
 sys-fs
   +-- cdf
-  +-- lstree
 x11-misc
   +-- bmpanel2
-  +-- openbox-menu
   +-- cairo-compmgr
+  +-- openbox-menu
 x11-terms
   +-- altyo
-dev-util
-  +-- repo   
