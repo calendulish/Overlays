@@ -18,26 +18,26 @@ DEPEND="sys-devel/binutils
         app-arch/tar"
 RDEPEND="dev-qt/qtdbus:4
          dev-libs/openssl
-		 media-libs/libpng
-		 net-dns/c-ares
-		 dev-libs/crypto++"
-		 
+         media-libs/libpng
+         net-dns/c-ares
+         dev-libs/crypto++"
+         
 QA_PREBUILT="/usr/bin/megasync"
 
 S="$WORKDIR/usr"
 
 src_unpack() {
-		ar x "$DISTDIR/$A"
-		tar xfv data.tar.gz
-		cd "$S"
+        ar x "$DISTDIR/$A"
+        tar xfv data.tar.gz
+        cd "$S"
 }
 
 src_install() {
-	dobin bin/megasync
-	domenu share/applications/megasync.desktop
-	doicon -s 16 share/icons/hicolor/16x16/apps/mega.png
-	doicon -s 32 share/icons/hicolor/32x32/apps/mega.png
-	doicon -s 48 share/icons/hicolor/48x48/apps/mega.png
-	doicon -s 128 share/icons/hicolor/128x128/apps/mega.png
-	doicon -s 256 share/icons/hicolor/256x256/apps/mega.png
+    dobin bin/megasync
+    domenu share/applications/megasync.desktop
+    doicon -s 16 share/icons/hicolor/16x16/apps/mega.png
+    doicon -s 32 share/icons/hicolor/32x32/apps/mega.png
+    doicon -s 48 share/icons/hicolor/48x48/apps/mega.png
+    doicon -s 128 share/icons/hicolor/128x128/apps/mega.png
+    doicon -s 256 share/icons/hicolor/256x256/apps/mega.png
 }

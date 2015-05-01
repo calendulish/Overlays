@@ -42,8 +42,8 @@ QA_PREBUILT="/opt/${PN}/lib/libQt5Sql.so.5
              /opt/${PN}/lib/imageformats/libqjpeg.so"
 
 src_install() {
-	doicon "$FILESDIR"/$PN.png
-	domenu "$FILESDIR"/$PN.desktop
+    doicon "$FILESDIR"/$PN.png
+    domenu "$FILESDIR"/$PN.desktop
 
     dodir /opt/fritzing
     mv "${S}" "${D}"/opt/${PN} || die
