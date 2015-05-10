@@ -1,0 +1,25 @@
+#!/bin/bash
+STEAMWINE_PREFIX="/home/lara/.local/share/wineprefixes/steam"
+
+if test "$(uname -m)" == "x86_64"; then
+    STEAMWINE_PATH="$STEAMWINE_PREFIX/drive_c/Program Files (x86)/Steam"
+else
+    STEAMWINE_PATH="$STEAMWINE_PREFIX/drive_c/Program Files/Steam"
+fi
+
+function help() {
+cat << EOF
+Use: $0              execute steam client trough wine
+     $0 --reinstall  reinstall local steam client
+EOF
+}
+
+if test ! -f "$STEAMWINE_PATH/Steam.exe" -o "$1" == "--reinstall"; then
+    env WINEPREFIX="$STEAMWINE_PREFIX" winetricks --no-isolate --force steam
+    exit $?
+elif test "${1}x" != "x"; then
+    help
+    exit 1
+fi
+
+env WINEPREFIX="$STEAMWINE_PREFIX" wine "$STEAMWINE_PATH/Steam.exe"

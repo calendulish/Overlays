@@ -11,6 +11,8 @@ app-text
   +-- lstree
 dev-util
   +-- repo
+games-util
+  +-- steamwine-launcher
 net-misc
   +-- megasync-bin
   +-- nullidentdmod
