@@ -12,7 +12,7 @@ app-text
 dev-util
   +-- repo
 games-util
-  +-- steamwine-launcher
+  +-- steamwine
 net-misc
   +-- megasync-bin
   +-- nullidentdmod

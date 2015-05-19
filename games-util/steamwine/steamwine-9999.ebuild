@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit eutils gnome2-utils fdo-mime
+inherit eutils gnome2-utils fdo-mime git-r3
 
 DESCRIPTION="Installer, launcher and supplementary files for Valve's Steam client"
 HOMEPAGE="http://steampowered.com"
@@ -12,24 +12,24 @@ HOMEPAGE="http://steampowered.com"
 KEYWORDS="~x86 ~amd64"
 LICENSE="ValveSteamLicense"
 
+EGIT_REPO_URI="https://github.com/LaraCraft93/$PN"
+
 RESTRICT="bindist mirror"
 SLOT="0"
 
-RDEPEND="app-emulation/wine
-         app-emulation/winetricks"
+RDEPEND="app-emulation/wine[s3tc,samba]
+         app-emulation/winetricks[rar]"
+DEPEND="dev-vcs/git"
 
 IUSE=""
 
-S="$FILESDIR"
-
 src_install() {
-    dodoc steam_install_agreement.txt
-    dobin steamwine
+    dodoc "$FILESDIR"/steam_install_agreement.txt
+    newbin steamwine.sh steamwine
     domenu steamwine.desktop
-    
-    cd icons/
-    for directory in * ; do
-        newicon -s $directory $directory/steam.png steamwine.png
+    insinto /usr/share/$PN
+    for patch in patches/*; do
+        doins "$patch"
     done
 }
 
