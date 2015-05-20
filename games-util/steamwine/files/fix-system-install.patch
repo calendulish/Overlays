@@ -1,0 +1,29 @@
+--- steamwine.sh	2015-05-19 17:26:30.960237168 -0300
++++ steamwine.new.sh	2015-05-19 17:30:46.705217841 -0300
+@@ -32,7 +32,7 @@
+     printf "%5c $0 --relink %14c relink games library into $HOME\n\n"
+     printf "%5c ========= GAMES PATCHES =========\n\n"
+ 
+-    for file in $(ls patches/*)
++    for file in $(ls /usr/share/steamwine/patches/*)
+     do
+         game="$(basename -zs '.sh' $file)"
+         printf "%5c $0 --$game %$[20-${#game}]c apply wine patches for $game\n"
+@@ -42,7 +42,7 @@
+ }
+ 
+ function call() {
+-    exec patches/$1 $STEAMWINE_PREFIX
++    exec /usr/share/steamwine/patches/$1 $STEAMWINE_PREFIX
+     exit $?
+ }
+ 
+@@ -71,7 +71,7 @@
+ }
+ 
+ 
+-for file in $(ls patches/*)
++for file in $(ls /usr/share/steamwine/patches/*)
+ do
+     if test "$1" == "--$(basename -zs '.sh' $file)"
+     then
