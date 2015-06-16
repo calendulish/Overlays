@@ -6,9 +6,9 @@ EAPI=5
 inherit eutils multilib
 
 DESCRIPTION="The official QT-Based mega.co.nz client for sync your MEGA account"
-HOMEPAGE="http://mega.co.nz"
-SRC_URI="amd64? ( https://mega.co.nz/linux/MEGAsync/Debian_7.0/amd64/${PN/-bin/}_${PV}_amd64.deb )
-           x86? ( https://mega.co.nz/linux/MEGAsync/Debian_7.0/i386/${PN/-bin/}_${PV}_i386.deb )"
+HOMEPAGE="http://mega.nz"
+SRC_URI="amd64? ( https://mega.co.nz/linux/MEGAsync/Debian_8.0/amd64/${PN/-bin/}_${PV}_amd64.deb )
+           x86? ( https://mega.co.nz/linux/MEGAsync/Debian_8.0/i386/${PN/-bin/}_${PV}_i386.deb )"
 
 LICENSE="MEGA"
 SLOT="0"
@@ -17,18 +17,19 @@ KEYWORDS="~amd64 ~x86"
 DEPEND="sys-devel/binutils
         app-arch/tar"
 RDEPEND="dev-qt/qtdbus:4
+         dev-qt/qtgui:4
          dev-libs/openssl
          media-libs/libpng
          net-dns/c-ares
          dev-libs/crypto++"
-         
+
 QA_PREBUILT="/usr/bin/megasync"
 
 S="$WORKDIR/usr"
 
 src_unpack() {
         ar x "$DISTDIR/$A"
-        tar xfv data.tar.gz
+        tar xfv data.tar.xz
         cd "$S"
 }
 
