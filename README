@@ -22,6 +22,8 @@ sys-app
   +-- lm_sensors-f2a78m-conf
 sys-fs
   +-- cdf
+sys-process
+  +-- systemd-cron
 x11-misc
   +-- bmpanel2
   +-- cairo-compmgr
