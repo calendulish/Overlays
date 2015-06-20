@@ -7,9 +7,6 @@ Gentoo Overlays © 2015 Lara Maia <lara@craft.net.br>
 ```
 app-admin/
   └─ backup-conf
-app-editors/
-  └─ geany-checkpath
-  └─ gvim-checkpath
 dev-util/
   └─ repo
 games-util/
