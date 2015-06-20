@@ -10,7 +10,7 @@ HOMEPAGE="http://mega.nz"
 SRC_URI="amd64? ( https://mega.co.nz/linux/MEGAsync/Debian_8.0/amd64/${PN/-bin/}_${PV}_amd64.deb )
            x86? ( https://mega.co.nz/linux/MEGAsync/Debian_8.0/i386/${PN/-bin/}_${PV}_i386.deb )"
 
-LICENSE="MEGA"
+LICENSE="all-rights-reserved"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
