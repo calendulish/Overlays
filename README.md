@@ -10,8 +10,6 @@ app-admin/
 app-editors/
   └─ geany-checkpath
   └─ gvim-checkpath
-app-text/
-  └─ lstree
 dev-util/
   └─ repo
 games-util/
