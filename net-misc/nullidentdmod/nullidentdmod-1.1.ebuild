@@ -3,17 +3,15 @@
 # $Header: $
 
 EAPI=5
-inherit git-r3
 
 DESCRIPTION="Minimal identd server with customizable userid"
 HOMEPAGE="http://craft.net.br/NullidentdMod/"
-EGIT_REPO_URI="https://github.com/BlackXT/nullidentdmod"
+SRC_URI="https://github.com/BlackXT/nullidentdmod/archive/v1.1.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~arm"
 
-DEPEND="dev-vcs/git"
 RDEPEND="sys-apps/systemd"
 
 src_compile() {
