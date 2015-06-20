@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>lara@craft.net.br</email>
+		<name>Lara Maia</name>
+	</maintainer>
+	<upstream>
+		<maintainer>
+			<email>linvinus@gmail.com</email>
+			<name>Konstantinov Denis</name>
+		</maintainer>
+		<bugs-to>https://github.com/linvinus/AltYo/issues</bugs-to>
+		<remote-id type="github">linvinus/AltYo</remote-id>
+	</upstream>
+</pkgmetadata>

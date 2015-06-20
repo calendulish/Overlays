@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>lara@craft.net.br</email>
+		<name>Lara Maia</name>
+	</maintainer>
+	<upstream>
+		<maintainer>
+			<email>acidhub@craft.net.br</email>
+			<name>Fernando Manfredi</name>
+		</maintainer>
+		<bugs-to>https://github.com/BlackXT/nullidentdmod/issues</bugs-to>
+		<remote-id type="github">BlackXT/nullidentdmod</remote-id>
+	</upstream>
+</pkgmetadata>

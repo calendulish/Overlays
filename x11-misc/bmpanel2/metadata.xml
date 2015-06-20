@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>lara@craft.net.br</email>
+		<name>Lara Maia</name>
+	</maintainer>
+	<upstream>
+		<maintainer>
+			<email>no.smile.face@gmail.com</email>
+			<name>nsf</name>
+		</maintainer>
+		<bugs-to>https://code.google.com/p/bmpanel2/issues</bugs-to>
+		<remote-id type="googlecode">bmpanel2</remote-id>
+	</upstream>
+</pkgmetadata>
