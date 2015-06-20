@@ -16,12 +16,10 @@ EGIT_REPO_URI="https://github.com/LaraCraft93/$PN"
 
 RESTRICT="bindist mirror"
 SLOT="0"
-
-RDEPEND="app-emulation/wine[s3tc,samba]
-         app-emulation/winetricks[rar]"
-DEPEND="dev-vcs/git"
-
 IUSE=""
+
+RDEPEND="app-emulation/wine[s3tc,samba]"
+DEPEND="dev-vcs/git"
 
 src_prepare() {
     patch -Np0 -i "$FILESDIR"/fix-system-install.patch
@@ -31,7 +29,7 @@ src_install() {
     dodoc "$FILESDIR"/steam_install_agreement.txt
     newbin steamwine.sh steamwine
     domenu steamwine.desktop
-    
+
     insinto /usr/share/$PN/patches/
     for patch in patches/*; do
         doins "$patch"
