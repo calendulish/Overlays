@@ -11,6 +11,6 @@
 			<name>nsf</name>
 		</maintainer>
 		<bugs-to>https://code.google.com/p/bmpanel2/issues</bugs-to>
-		<remote-id type="googlecode">bmpanel2</remote-id>
+		<remote-id type="google-code">bmpanel2</remote-id>
 	</upstream>
 </pkgmetadata>
