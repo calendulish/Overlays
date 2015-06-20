@@ -19,8 +19,6 @@ games-util/
 net-misc/
   └─ megasync-bin
   └─ nullidentdmod
-sci-electronics/
-  └─ fritzing-bin
 sys-app/
   └─ lm_sensors-f2a78m-conf
 sys-fs/
