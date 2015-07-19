@@ -1,4 +1,4 @@
-# Lara Maia <lara@craft.net.br> 2015
+# Lara Maia <dev@lara.click> 2015
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 

@@ -1,4 +1,4 @@
-Gentoo Overlays © 2015 Lara Maia <lara@craft.net.br>
+Gentoo Overlays © 2015 Lara Maia <dev@lara.click>
 
 [![wercker status](https://app.wercker.com/status/6ff3e903a98668a8b5666655b3bcb663/m "wercker status")](https://app.wercker.com/project/bykey/6ff3e903a98668a8b5666655b3bcb663)
 
@@ -29,4 +29,4 @@ x11-terms
 ```
 #
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/LaraCraft93/Overlays?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Love](https://img.shields.io/badge/BUILT%20WITH-Love-red.svg)](http://lara.craft.net.br)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ShyPixie/Overlays?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Love](https://img.shields.io/badge/BUILT%20WITH-Love-red.svg)](http://lara.click)

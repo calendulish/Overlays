@@ -1,14 +1,14 @@
-# Lara Maia <lara@craft.net.br> 2015
+# Lara Maia <dev@lara.click> 2015
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
 EAPI=5
 
 DESCRIPTION="This script create a backup of your config files in a tree format on current folder"
-HOMEPAGE="https://github.com/LaraCraft93/backup-conf"
+HOMEPAGE="https://github.com/ShyPixie/backup-conf"
 LICENSE="GPL-3"
 
-SRC_URI="https://github.com/LaraCraft93/$PN/archive/v$PV.tar.gz"
+SRC_URI="https://github.com/ShyPixie/$PN/archive/v$PV.tar.gz"
 
 KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 

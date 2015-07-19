@@ -1,12 +1,12 @@
-# Maintainer: Lara Maia <lara@craft.net.br>
+# Maintainer: Lara Maia <dev@lara.click>
 
 EAPI=5
 
 DESCRIPTION="libsensors3 configuration file for the GIGABYTE GA-F2a78M-D3H"
-HOMEPAGE="http://lara.craft.net.br"
+HOMEPAGE="http://lara.click"
 LICENSE="GPL-3"
 
-SRC_URI="http://lara.craft.net.br/f2a78m.conf"
+SRC_URI="http://lara.click/f2a78m.conf"
 
 KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 

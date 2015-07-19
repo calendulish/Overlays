@@ -1,4 +1,4 @@
-# Lara Maia <lara@craft.net.br> 2015
+# Lara Maia <dev@lara.click> 2015
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -12,7 +12,7 @@ HOMEPAGE="http://steampowered.com"
 KEYWORDS="~x86 ~amd64"
 LICENSE="ValveSteamLicense"
 
-EGIT_REPO_URI="https://github.com/LaraCraft93/$PN"
+EGIT_REPO_URI="https://github.com/ShyPixie/$PN"
 
 RESTRICT="bindist mirror"
 SLOT="0"

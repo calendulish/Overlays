@@ -1,13 +1,13 @@
 <repositories version="1.0">
   <repo quality="experimental" status="unofficial">
     <name>laracraft93</name>
-    <description lang="en">LaraCraft93's personal overlay</description>
-    <homepage>https://github.com/LaraCraft93/Overlays</homepage>
+    <description lang="en">ShyPixie's personal overlay</description>
+    <homepage>https://github.com/ShyPixie/Overlays</homepage>
     <owner type="person">
-      <email>lara@craft.net.br</email>
+      <email>dev@lara.click</email>
       <name>Lara Maia</name>
     </owner>
-    <source type="git">git://github.com/LaraCraft93/Overlays.git</source>
-    <feed>https://github.com/LaraCraft93/Overlays/commits/master.atom</feed>
+    <source type="git">git://github.com/ShyPixie/Overlays.git</source>
+    <feed>https://github.com/ShyPixie/Overlays/commits/master.atom</feed>
   </repo>
 </repositories>

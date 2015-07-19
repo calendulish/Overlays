@@ -2,15 +2,15 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer>
-		<email>lara@craft.net.br</email>
+		<email>dev@lara.click</email>
 		<name>Lara Maia</name>
 	</maintainer>
 	<upstream>
 		<maintainer>
-			<email>lara@craft.net.br</email>
+			<email>dev@lara.click</email>
 			<name>Lara Maia</name>
 		</maintainer>
-		<bugs-to>https://github.com/LaraCraft93/backup-conf/issues</bugs-to>
-		<remote-id type="github">LaraCraft93/backup-conf</remote-id>
+		<bugs-to>https://github.com/ShyPixie/backup-conf/issues</bugs-to>
+		<remote-id type="github">ShyPixie/backup-conf</remote-id>
 	</upstream>
 </pkgmetadata>

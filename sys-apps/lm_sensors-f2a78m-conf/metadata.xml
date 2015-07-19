@@ -2,14 +2,14 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer>
-		<email>lara@craft.net.br</email>
+		<email>dev@lara.click</email>
 		<name>Lara Maia</name>
 	</maintainer>
 	<upstream>
 		<maintainer>
-			<email>lara@craft.net.br</email>
+			<email>dev@lara.click</email>
 			<name>Lara Maia</name>
 		</maintainer>
-		<bugs-to>lara@craft.net.br</bugs-to>
+		<bugs-to>dev@lara.click</bugs-to>
 	</upstream>
 </pkgmetadata>
