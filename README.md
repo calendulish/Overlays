@@ -4,6 +4,8 @@ Gentoo Overlays © 2015 Lara Maia <dev@lara.click>
 
 ## Current Ebuilds:
 
+[![Join the chat at https://gitter.im/ShyPixie/Overlays](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ShyPixie/Overlays?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ```
 app-admin/
   └─ backup-conf
