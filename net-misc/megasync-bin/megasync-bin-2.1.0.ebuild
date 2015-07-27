@@ -5,10 +5,10 @@
 EAPI=5
 inherit eutils multilib
 
-DESCRIPTION="The official QT-Based mega.co.nz client for sync your MEGA account"
+DESCRIPTION="The official QT-Based mega.nz client for sync your MEGA account"
 HOMEPAGE="http://mega.nz"
-SRC_URI="amd64? ( https://mega.co.nz/linux/MEGAsync/Debian_8.0/amd64/${PN/-bin/}_${PV}_amd64.deb )
-		   x86? ( https://mega.co.nz/linux/MEGAsync/Debian_8.0/i386/${PN/-bin/}_${PV}_i386.deb )"
+SRC_URI="amd64? ( https://mega.nz/linux/MEGAsync/Debian_8.0/amd64/${PN/-bin/}_${PV}_amd64.deb )
+		   x86? ( https://mega.nz/linux/MEGAsync/Debian_8.0/i386/${PN/-bin/}_${PV}_i386.deb )"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
