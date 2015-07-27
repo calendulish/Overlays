@@ -1,7 +1,0 @@
-box: laracraft93/repoman
-
-build:
-    steps:
-        - script:
-            name: Checking files
-            code: repoman full --include-dev --pretend --verbose
