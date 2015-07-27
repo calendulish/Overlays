@@ -5,14 +5,17 @@
 EAPI=5
 
 DESCRIPTION="Minimal identd server with customizable userid"
-HOMEPAGE="http://craft.net.br/NullidentdMod/"
-SRC_URI="https://github.com/BlackXT/nullidentdmod/archive/v1.1.tar.gz"
+HOMEPAGE="http://acidhub.click/NullidentdMod/"
+SRC_URI="https://github.com/Acidhub/nullidentdmod/archive/v${PV}.tar.gz"
+
+REQUIRED_USE="systemd"
+IUSE="$REQUIRED_USE"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~arm"
+KEYWORDS="amd64 x86 arm"
 
-RDEPEND="sys-apps/systemd"
+RDEPEND="systemd? ( sys-apps/systemd )"
 
 src_compile() {
     emake

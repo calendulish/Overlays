@@ -6,15 +6,18 @@ EAPI=5
 inherit git-r3
 
 DESCRIPTION="Minimal identd server with customizable userid"
-HOMEPAGE="http://craft.net.br/NullidentdMod/"
-EGIT_REPO_URI="https://github.com/BlackXT/nullidentdmod"
+HOMEPAGE="http://acidhub.click/NullidentdMod/"
+EGIT_REPO_URI="https://github.com/Acidhub/nullidentdmod"
+
+REQUIRED_USE="systemd"
+IUSE="$REQUIRED_USE"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~arm"
+KEYWORDS=""
 
 DEPEND="dev-vcs/git"
-RDEPEND="sys-apps/systemd"
+RDEPEND="systemd? ( sys-apps/systemd )"
 
 src_compile() {
     emake
