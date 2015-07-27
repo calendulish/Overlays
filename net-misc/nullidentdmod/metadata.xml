@@ -7,10 +7,10 @@
 	</maintainer>
 	<upstream>
 		<maintainer>
-			<email>acidhub@craft.net.br</email>
+			<email>contact@acidhub.click</email>
 			<name>Fernando Manfredi</name>
 		</maintainer>
-		<bugs-to>https://github.com/BlackXT/nullidentdmod/issues</bugs-to>
-		<remote-id type="github">BlackXT/nullidentdmod</remote-id>
+		<bugs-to>https://github.com/Acidhub/nullidentdmod/issues</bugs-to>
+		<remote-id type="github">Acidhub/nullidentdmod</remote-id>
 	</upstream>
 </pkgmetadata>
