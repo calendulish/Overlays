@@ -9,8 +9,6 @@ app-admin/
   └─ backup-conf
 dev-util/
   └─ repo
-games-util/
-  └─ steamwine
 net-misc/
   └─ megasync-bin
   └─ nullidentdmod
