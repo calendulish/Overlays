@@ -17,10 +17,10 @@ KEYWORDS="~amd64 ~x86"
 IUSE="cron-boot etc-crontab-systemd minutely setgid yearly"
 
 RDEPEND=">=sys-apps/systemd-217
-	     sys-apps/debianutils
-	     !etc-crontab-systemd? ( !sys-process/dcron )
-	     ${PYTHON_DEPS}
-         sys-process/cronbase"
+		 sys-apps/debianutils
+		 !etc-crontab-systemd? ( !sys-process/dcron )
+		 ${PYTHON_DEPS}
+		 sys-process/cronbase"
 
 DEPEND="sys-process/cronbase"
 
@@ -51,9 +51,9 @@ src_prepare() {
 
 my_use_enable() {
 	if use ${1}; then
-        echo --enable-${2:-${1}}=yes
+		echo --enable-${2:-${1}}=yes
 	else
-        echo --enable-${2:-${1}}=no
+		echo --enable-${2:-${1}}=no
 	fi
 }
 

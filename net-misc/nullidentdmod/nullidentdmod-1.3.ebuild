@@ -18,9 +18,9 @@ KEYWORDS="amd64 x86 arm"
 RDEPEND="systemd? ( sys-apps/systemd )"
 
 src_compile() {
-    emake
+	emake
 }
 
 src_install() {
-    emake DESTDIR="${D}" PREFIX=/usr install
+	emake DESTDIR="${D}" PREFIX=/usr install
 }

@@ -16,16 +16,16 @@ SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 
 RDEPEND="dev-vcs/git
-         ${PYTHON_DEPS}"
+		 ${PYTHON_DEPS}"
 DEPEND="${RDEPEND}
-        net-misc/curl"
+		net-misc/curl"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 src_prepare() {
-    python_fix_shebang ${PN}
+	python_fix_shebang ${PN}
 }
 
 src_install() {
-    exeinto "/usr/bin"
-    doexe ${PN}
+	exeinto "/usr/bin"
+	doexe ${PN}
 }

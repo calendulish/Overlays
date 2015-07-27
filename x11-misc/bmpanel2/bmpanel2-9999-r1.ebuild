@@ -17,38 +17,38 @@ KEYWORDS="~amd64 ~x86"
 IUSE="python doc"
 
 DEPEND="doc? ( app-text/docbook-xsl-stylesheets app-text/asciidoc )
-        dev-util/cmake
-        dev-vcs/git"
+		dev-util/cmake
+		dev-vcs/git"
 
 RDEPEND="python? ( ${PYTHON_DEPS} dev-python/pygtk[${PYTHON_USEDEP}] )
-         x11-libs/libXext
-         x11-libs/pango
-         media-fonts/dejavu"
+		 x11-libs/libXext
+		 x11-libs/pango
+		 media-fonts/dejavu"
 
 DOCS=( INSTALL COPYING )
 CMAKE_IN_SOURCE_BUILD="1"
 
 src_configure() {
-    configuration() {
-        local mycmakeargs=( -DPYTHON_EXECUTABLE="${PYTHON}"
-                            -DPYTHON_SITE_PACKAGES="$(python_get_sitedir)"
-                            -DPYTHON_SUFFIX="-${EPYTHON}"
-                            $(cmake-utils_use_use python CONFIG)
-                            $(cmake-utils_use_use doc MANPAGE) )
+	configuration() {
+		local mycmakeargs=( -DPYTHON_EXECUTABLE="${PYTHON}"
+							-DPYTHON_SITE_PACKAGES="$(python_get_sitedir)"
+							-DPYTHON_SUFFIX="-${EPYTHON}"
+							$(cmake-utils_use_use python CONFIG)
+							$(cmake-utils_use_use doc MANPAGE) )
 
-        cmake-utils_src_configure
-    }
-    python_foreach_impl configuration
+		cmake-utils_src_configure
+	}
+	python_foreach_impl configuration
 }
 
 src_compile() {
-    python_foreach_impl cmake-utils_src_make
+	python_foreach_impl cmake-utils_src_make
 }
 
 src_test() {
-    python_foreach_impl cmake-utils_src_test
+	python_foreach_impl cmake-utils_src_test
 }
 
 src_install() {
-    python_foreach_impl cmake-utils_src_install
+	python_foreach_impl cmake-utils_src_install
 }

@@ -17,13 +17,13 @@ SLOT=0
 RDEPEND="sys-libs/glibc"
 
 src_configure() {
-    ./configure --prefix=/usr
+	./configure --prefix=/usr
 }
 
 src_compile() {
-    make
+	make
 }
 
 src_install() {
-    make DESTDIR="$D" install
+	make DESTDIR="$D" install
 }

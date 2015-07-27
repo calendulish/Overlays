@@ -16,23 +16,23 @@ SLOT=0
 IUSE="git"
 
 RDEPEND="app-misc/colordiff
-         sys-devel/gettext
-         app-admin/sudo
-         sys-apps/util-linux
-         git? ( dev-vcs/git )"
+		 sys-devel/gettext
+		 app-admin/sudo
+		 sys-apps/util-linux
+		 git? ( dev-vcs/git )"
 DEPEND="app-arch/tar"
 
 src_compile() {
-    make
+	make
 }
 
 src_install() {
-    make DESTDIR="$D" install
+	make DESTDIR="$D" install
 }
 
 pkg_postinst() {
-    ewarn "Example of configuration file installed on"
-    ewarn "/usr/share/backup-conf/backup-conf.conf.example"
-    ewarn 'copy to $XDG_CONFIG_HOME/backup-conf.conf or'
-    ewarn "/etc/backup-conf.conf, and edit with you files/directories."
+	ewarn "Example of configuration file installed on"
+	ewarn "/usr/share/backup-conf/backup-conf.conf.example"
+	ewarn 'copy to $XDG_CONFIG_HOME/backup-conf.conf or'
+	ewarn "/etc/backup-conf.conf, and edit with you files/directories."
 }
