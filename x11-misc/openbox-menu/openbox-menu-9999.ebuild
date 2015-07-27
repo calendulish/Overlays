@@ -10,14 +10,13 @@ DESCRIPTION="Openbox menu generator"
 HOMEPAGE="https://github.com/woho/openbox-menu"
 LICENSE="GPL-3"
 
-KEYWORDS="~amd64 ~x86 ~arm"
+KEYWORDS=""
 SLOT="0"
 
 EGIT_REPO_URI="https://github.com/woho/openbox-menu.git"
 
 RDEPEND="x11-wm/openbox:3
 		 ${PYTHON_DEPS}"
-
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 src_install() {

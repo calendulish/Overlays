@@ -12,7 +12,7 @@ SRC_URI=""
 
 LICENSE="LGPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
+KEYWORDS=""
 
 RDEPEND="=x11-libs/gtk+-2*
 		 >=x11-libs/cairo-1.4

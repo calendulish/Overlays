@@ -13,7 +13,7 @@ LICENSE="MIT"
 EGIT_REPO_URI="git://github.com/nsf/bmpanel2.git"
 
 SLOT=0
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE="python doc"
 
 DEPEND="doc? ( app-text/docbook-xsl-stylesheets app-text/asciidoc )

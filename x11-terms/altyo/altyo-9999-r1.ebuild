@@ -11,7 +11,7 @@ EGIT_REPO_URI="https://github.com/linvinus/AltYo"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 RDEPEND="x11-libs/vte:2.91[introspection,vala]

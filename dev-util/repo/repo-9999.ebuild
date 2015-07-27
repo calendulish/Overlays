@@ -13,7 +13,7 @@ EGIT_REPO_URI="https://gerrit.googlesource.com/git-repo"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
+KEYWORDS=""
 
 RDEPEND="dev-vcs/git
 		 ${PYTHON_DEPS}"
