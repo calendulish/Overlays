@@ -11,7 +11,7 @@ LICENSE="BSD-2"
 
 EGIT_REPO_URI="git://github.com/anrieff/$PN.git"
 
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 SLOT=0
 
 DEPEND="dev-vcs/git
