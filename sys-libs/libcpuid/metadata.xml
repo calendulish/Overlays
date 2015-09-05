@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>dev@lara.click</email>
+		<name>Lara Maia</name>
+	</maintainer>
+	<upstream>
+		<maintainer>
+			<email>anrieff@gmail.com</email>
+			<name>Veselin Georgiev</name>
+		</maintainer>
+		<bugs-to>anrieff@gmail.com</bugs-to>
+	</upstream>
+</pkgmetadata>

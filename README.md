@@ -12,8 +12,11 @@ net-misc/
   └─ nullidentdmod
 sys-app/
   └─ lm_sensors-f2a78m-conf
+  └─ cpu-x
 sys-fs/
   └─ cdf
+sys-libs/
+  └─ libcpuid
 sys-process/
   └─ systemd-cron
 x11-misc/
