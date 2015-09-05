@@ -6,7 +6,7 @@ language: python
 python:
     - pypy
 env:
-    - PORTAGE_VER="2.2.20"
+    - PORTAGE_VER="2.2.20.1"
 before_script:
     - mkdir travis-overlay
     - mv !(travis-overlay) travis-overlay/
@@ -27,5 +27,4 @@ before_script:
     - wget "https://www.gentoo.org/dtd/metadata.dtd" -O /usr/portage/distfiles/metadata.dtd
     - cd travis-overlay
 script:
-    - ./../spinner.sh "./../portage-${PORTAGE_VER}/bin/repoman -Sd full"
-# You can append own scripts after this line
+    - ./../spinner.sh "python ../portage-${PORTAGE_VER}/bin/repoman -Sd --without-mask full"
