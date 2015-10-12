@@ -17,8 +17,6 @@ sys-fs/
   └─ cdf
 sys-libs/
   └─ libcpuid
-sys-process/
-  └─ systemd-cron
 x11-misc/
   └─ bmpanel2
   └─ cairo-compmgr
