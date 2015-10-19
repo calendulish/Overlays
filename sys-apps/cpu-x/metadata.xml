@@ -12,4 +12,13 @@
 		</maintainer>
 		<bugs-to>xorgbreaker@gmail.com</bugs-to>
 	</upstream>
+	<use>
+		<flag name="gtk">Enable support for GTK GUI</flag>
+		<flag name="ncurses">Enable support for NCurses mode</flag>
+		<flag name="cpuid">Enable calls to libcpuid (it's not recommended to disable)</flag>
+		<flag name="dmidecode">Compile libdmidecode and enable calls to libdmidecode (it's not recommended to disable)</flag>
+		<flag name="bandwidth">Compile libbandwidth and enable calls to libbandwidth (it's not recommended to disable)</flag>
+		<flag name="pci">Enable calls to libpci (it's not recommended to disable)</flag>
+		<flag name="system">Enable calls to libprocps (it's not recommended to disable)</flag>
+	</use>
 </pkgmetadata>
