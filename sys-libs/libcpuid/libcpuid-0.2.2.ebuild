@@ -15,7 +15,7 @@ KEYWORDS="~amd64 ~x86"
 SLOT=0
 
 DEPEND="sys-devel/libtool
-		 sys-devel/autoconf"
+		sys-devel/autoconf"
 RDEPEND="sys-libs/glibc"
 
 src_prepare() {
