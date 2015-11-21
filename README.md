@@ -5,8 +5,6 @@ Gentoo Overlays © 2015 Lara Maia [dev@lara.click](mailto:dev@lara.click)
 ```
 app-admin/
   └─ backup-conf
-dev-util/
-  └─ repo
 net-misc/
   └─ megasync-bin
   └─ nullidentdmod
