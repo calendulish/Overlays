@@ -20,10 +20,10 @@ DEPEND="dev-util/cmake
 		virtual/pkgconfig
 		dev-lang/nasm"
 RDEPEND="gtk? ( x11-libs/gtk+:3 )
-		  ncurses? ( sys-libs/ncurses )
-		  pci? ( sys-apps/pciutils )
-		  system? ( sys-process/procps )
-		  cpuid? ( sys-libs/libcpuid )"
+		ncurses? ( sys-libs/ncurses )
+		pci? ( sys-apps/pciutils )
+		system? ( sys-process/procps )
+		cpuid? ( sys-libs/libcpuid )"
 
 S="$WORKDIR/CPU-X-$PV"
 
@@ -44,12 +44,4 @@ src_configure() {
 		cmake-utils_src_configure
 	}
 	configuration
-}
-
-src_compile() {
-	cmake-utils_src_make
-}
-
-src_install() {
-	cmake-utils_src_install
 }
