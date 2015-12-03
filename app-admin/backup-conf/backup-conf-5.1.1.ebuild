@@ -22,18 +22,6 @@ RDEPEND="app-misc/colordiff
 		 git? ( dev-vcs/git )"
 DEPEND="app-arch/tar"
 
-src_prepare() {
-	sed 's|\\\/home\\\/lara|$HOME|g' -i backup-conf.sh
-}
-
-src_compile() {
-	make
-}
-
-src_install() {
-	make DESTDIR="$D" install
-}
-
 pkg_postinst() {
 	ewarn "Example of configuration file installed on"
 	ewarn "/usr/share/backup-conf/backup-conf.conf.example"
