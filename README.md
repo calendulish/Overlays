@@ -13,6 +13,8 @@ sys-app/
   └─ cpu-x
 sys-fs/
   └─ cdf
+sys-kernel/
+  └─ liquorix-sources
 sys-libs/
   └─ libcpuid
 x11-misc/
