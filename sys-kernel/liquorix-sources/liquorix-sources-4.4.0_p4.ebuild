@@ -9,17 +9,17 @@ inherit kernel-2
 detect_version
 detect_arch
 
-LIQUORIX_PATCH="${PV}-${PR/r}.patch.gz"
+LIQUORIX_PATCH="${PV/_p/-}.patch.gz"
 LIQUORIX_URI="http://liquorix.net/sources/${LIQUORIX_PATCH}"
 SRC_URI="${KERNEL_URI} ${LIQUORIX_URI}"
 
-DESCRIPTION="The Liquorix Kernel Sources v${PV}-${PR/r}"
+DESCRIPTION="The Liquorix Kernel Sources v${PV/_p/-}"
 HOMEPAGE="http://liquorix.net/"
 K_EXTRAEINFO="For more info on liquorix-sources and details on how to report problems, see: ${HOMEPAGE}."
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 
 UNIPATCH_LIST="${DISTDIR}/${LIQUORIX_PATCH}"
-UNIPATCH_EXCLUDE="patch-${PV}.patch"
+UNIPATCH_EXCLUDE="patch-${PV/_*}.patch"
 UNIPATCH_STRICTORDER="yes"
 
 pkg_setup(){
