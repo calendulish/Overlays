@@ -10,7 +10,7 @@
 			<email>steven@liquorix.net</email>
 			<name>Steven Barrett</name>
 		</maintainer>
-		<remote-id type="github">https://github.com/zen-kernel/zen-kernel/</remote-id>
+		<remote-id type="github">zen-kernel/zen-kernel/</remote-id>
 		<bugs-to>steven@liquorix.net</bugs-to>
 	</upstream>
 </pkgmetadata>
