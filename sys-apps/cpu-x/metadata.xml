@@ -10,7 +10,8 @@
 			<email>xorgbreaker@gmail.com</email>
 			<name>Xorg</name>
 		</maintainer>
-		<bugs-to>xorgbreaker@gmail.com</bugs-to>
+		<bugs-to>https://github.com/X0rg/CPU-X/issues</bugs-to>
+		<remote-id type="github">X0rg/CPU-X</remote-id>
 	</upstream>
 	<use>
 		<flag name="gtk">Enable support for GTK GUI</flag>
