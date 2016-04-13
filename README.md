@@ -4,6 +4,8 @@ Gentoo Overlays © 2015 Lara Maia [dev@lara.click](mailto:dev@lara.click)
 
 app-admin/  
   └─ backup-conf [_[R]_](https://github.com/ShyPixie/backup-conf) [_[M]_](mailto:dev@lara.click)  
+games-util/  
+  └─ steam-tools [_[R]_](https://github.com/ShyPixie/steam-tools) [_[M]_](mailto:dev@lara.click)  
 net-misc/  
   └─ megasync-bin [_[H]_](http://mega.nz)  
   └─ nullidentdmod [_[R]_](https://github.com/Acidhub/nullidentdmod)  
@@ -13,7 +15,7 @@ sys-app/
 sys-fs/  
   └─ cdf [_[R]_](http://sourceforge.net/projects/bmp-plugins.berlios/)  
 sys-kernel/  
-  └─ liquorix-sources [_[R]_](https://github.com/zen-kernel/zen-kernel/) [_[M]_](mailto:steven@liquorix.net) [_[H]_](http://liquorix.net)  
+  └─ liquorix-sources [_[R]_](https://github.com/zen-kernel/zen-kernel/)   [_[M]_](mailto:steven@liquorix.net) [_[H]_](http://liquorix.net)  
 sys-libs/  
   └─ libcpuid [_[R]_](https://github.com/anrieff/libcpuid) [_[M]_](mailto:anrieff@gmail.com)  
 x11-misc/  
@@ -23,4 +25,4 @@ x11-misc/
 x11-terms  
   └─ altyo [_[R]_](https://github.com/linvinus/AltYo/) [_[M]_](mailto:linvinus@gmail.com)  
 
-[![Build Status](https://travis-ci.org/ShyPixie/Overlays.svg?branch=master)](https://travis-ci.org/ShyPixie/Overlays) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ShyPixie/Overlays?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Love](https://img.shields.io/badge/BUILT%20WITH-Love-red.svg)](http://lara.click)
+[![Build Status](https://travis-ci.org/ShyPixie/Overlays.svg?branch=master)](https://travis-ci.org/ShyPixie/Overlays) [![Love](https://img.shields.io/badge/BUILT%20WITH-Love-red.svg)](http://lara.click)

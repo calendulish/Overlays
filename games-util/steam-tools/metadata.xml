@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>dev@lara.click</email>
+		<name>Lara Maia</name>
+	</maintainer>
+	<upstream>
+		<maintainer>
+			<email>dev@lara.click</email>
+			<name>Lara Maia</name>
+		</maintainer>
+		<remote-id type="github">ShyPixie/steam-tools/</remote-id>
+		<bugs-to>dev@lara.click</bugs-to>
+	</upstream>
+</pkgmetadata>
