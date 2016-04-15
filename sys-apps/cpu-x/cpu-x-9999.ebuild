@@ -3,15 +3,14 @@
 # $Id$
 
 EAPI=5
-inherit cmake-utils
+inherit git-r3 cmake-utils
 
 DESCRIPTION="Gathers information on CPU, motherboard and more (like CPU-Z)"
 HOMEPAGE="https://github.com/X0rg/$PN"
 LICENSE="GPL-3"
 
-SRC_URI="https://github.com/X0rg/$PN/archive/v$PV.tar.gz"
+EGIT_REPO_URI="https://github.com/X0rg/$PN.git"
 
-KEYWORDS="~amd64 ~x86"
 SLOT=0
 
 IUSE="gtk +ncurses +cpuid +dmidecode +bandwidth +pci +system"
@@ -23,9 +22,9 @@ RDEPEND="gtk? ( x11-libs/gtk+:3 )
 		ncurses? ( sys-libs/ncurses )
 		pci? ( sys-apps/pciutils )
 		system? ( sys-process/procps )
-		cpuid? ( sys-libs/libcpuid )"
+		cpuid? ( =sys-libs/libcpuid-9999 )"
 
-S="$WORKDIR/CPU-X-$PV"
+S="$WORKDIR/$PN-$PV"
 
 QA_PRESTRIPPED="/usr/bin/$PN"
 
