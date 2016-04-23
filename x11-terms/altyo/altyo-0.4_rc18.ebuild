@@ -12,7 +12,7 @@ SRC_URI="https://github.com/linvinus/AltYo/archive/debian/0.4_rc18-linvinus1.tar
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-DOCS="AUTHORS README"
+DOCS="AUTHORS COPYING README.md"
 
 RDEPEND="x11-libs/vte:2.91[introspection,vala]
 		 >=x11-libs/gtk+-3.4
