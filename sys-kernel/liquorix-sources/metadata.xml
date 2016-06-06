@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<maintainer>
+	<maintainer type="person">
 		<email>dev@lara.click</email>
 		<name>Lara Maia</name>
 	</maintainer>
@@ -11,6 +11,6 @@
 			<name>Steven Barrett</name>
 		</maintainer>
 		<remote-id type="github">zen-kernel/zen-kernel/</remote-id>
-		<bugs-to>steven@liquorix.net</bugs-to>
+		<bugs-to>mailto:steven@liquorix.net</bugs-to>
 	</upstream>
 </pkgmetadata>
