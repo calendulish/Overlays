@@ -21,5 +21,7 @@
 		<flag name="bandwidth">Compile libbandwidth and enable calls to libbandwidth (it's not recommended to disable)</flag>
 		<flag name="pci">Enable calls to libpci (it's not recommended to disable)</flag>
 		<flag name="system">Enable calls to libprocps (it's not recommended to disable)</flag>
+		<flag name="curl">Enable support for curl for check updates</flag>
+		<flag name="wget">Enable support for wget for check updates</flag>
 	</use>
 </pkgmetadata>

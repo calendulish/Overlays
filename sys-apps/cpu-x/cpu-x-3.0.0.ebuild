@@ -14,7 +14,7 @@ SRC_URI="https://github.com/X0rg/$PN/archive/v$PV.tar.gz"
 KEYWORDS="~amd64 ~x86"
 SLOT=0
 
-IUSE="gtk +ncurses +cpuid +dmidecode +bandwidth +pci +system"
+IUSE="gtk +ncurses +cpuid +dmidecode +bandwidth +pci +system curl wget"
 
 DEPEND="dev-util/cmake
 		virtual/pkgconfig
@@ -23,7 +23,9 @@ RDEPEND="gtk? ( x11-libs/gtk+:3 )
 		ncurses? ( sys-libs/ncurses )
 		pci? ( sys-apps/pciutils )
 		system? ( sys-process/procps )
-		cpuid? ( sys-libs/libcpuid )"
+		cpuid? ( sys-libs/libcpuid )
+		curl? ( net-misc/curl )
+		wget? ( net-misc/wget )"
 
 S="$WORKDIR/CPU-X-$PV"
 
