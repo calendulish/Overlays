@@ -16,11 +16,19 @@ KEYWORDS=""
 
 RDEPEND="=x11-libs/gtk+-2*
 		 >=x11-libs/cairo-1.4
-		 $(vala_depend)
 		 x11-libs/libSM
 		 gnome-base/gconf"
 DEPEND="${RDEPEND}
+		 $(vala_depend)
 		dev-vcs/git"
+
+QA_PRESTRIPPED="
+		/usr/bin/ccm-schema-key-to-gconf
+		/usr/bin/cairo-compmgr"
+
+pkg_setup() {
+	G2CONF="$G2CONF --enable-gconf"
+}
 
 src_prepare() {
 	sed "s/libvala-0.18/libvala-$(vala_best_api_version)/" -i configure.ac
@@ -30,14 +38,10 @@ src_prepare() {
 	epatch "$FILESDIR"/bfd-ansidecl.patch
 
 	vala_src_prepare
-}
-
-pkg_setup() {
-	G2CONF="$G2CONF --enable-gconf"
+    eautoreconf
 }
 
 src_configure() {
-	eautoreconf
 	econf --prefix=/usr LIBS="-ldl -lgmodule-2.0 -lm -lz"
 }
 
