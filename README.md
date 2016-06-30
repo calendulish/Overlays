@@ -6,8 +6,7 @@ app-admin/
   └─ backup-conf [_[R]_](https://github.com/ShyPixie/backup-conf) [_[M]_](mailto:dev@lara.click)  
 games-util/  
   └─ steam-tools [_[R]_](https://github.com/ShyPixie/steam-tools) [_[M]_](mailto:dev@lara.click)  
-net-misc/  
-  └─ megasync-bin [_[H]_](http://mega.nz)  
+net-misc/   
   └─ nullidentdmod [_[R]_](https://github.com/Acidhub/nullidentdmod)  
 sys-app/  
   └─ lm_sensors-f2a78m-conf [_[M]_](mailto:dev@lara.click)  
