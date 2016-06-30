@@ -13,8 +13,8 @@ SRC_URI="https://github.com/X0rg/$PN/archive/v$PV.tar.gz"
 
 KEYWORDS="~amd64 ~x86"
 SLOT=0
-
 IUSE="gtk +ncurses +cpuid +dmidecode +bandwidth +pci +system curl wget"
+RESTRICT="primaryuri"
 
 DEPEND="dev-util/cmake
 		virtual/pkgconfig

@@ -4,7 +4,7 @@
 
 EAPI=5
 
-DESCRIPTION="This script create a backup of your config files in a tree format on current folder"
+DESCRIPTION="Create a backup of your config files in tree format"
 HOMEPAGE="https://github.com/ShyPixie/backup-conf"
 LICENSE="GPL-3"
 
@@ -14,6 +14,7 @@ KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 
 SLOT=0
 IUSE="git"
+RESTRICT="binchecks primaryuri"
 
 RDEPEND="app-misc/colordiff
 		 sys-devel/gettext

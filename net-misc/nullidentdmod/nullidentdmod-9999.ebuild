@@ -15,6 +15,7 @@ IUSE="$REQUIRED_USE"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
+RESTRICT="mirror"
 
 DEPEND="dev-vcs/git"
 RDEPEND="systemd? ( sys-apps/systemd )"

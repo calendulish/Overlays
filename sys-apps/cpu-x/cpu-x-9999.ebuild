@@ -12,8 +12,8 @@ LICENSE="GPL-3"
 EGIT_REPO_URI="https://github.com/X0rg/$PN.git"
 
 SLOT=0
-
 IUSE="gtk +ncurses +cpuid +dmidecode +bandwidth +pci +system"
+RESTRICT="mirror"
 
 DEPEND="dev-util/cmake
 		virtual/pkgconfig

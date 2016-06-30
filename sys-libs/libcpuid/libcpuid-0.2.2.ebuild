@@ -13,6 +13,7 @@ SRC_URI="https://github.com/anrieff/$PN/archive/v$PV.tar.gz"
 
 KEYWORDS="~amd64 ~x86"
 SLOT=0
+RESTRICT="primaryuri"
 
 DEPEND="sys-devel/libtool
 		sys-devel/autoconf"

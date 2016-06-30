@@ -13,6 +13,7 @@ SRC_URI=""
 LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS=""
+RESTRICT="mirror"
 
 RDEPEND="=x11-libs/gtk+-2*
 		 >=x11-libs/cairo-1.4
@@ -38,7 +39,7 @@ src_prepare() {
 	epatch "$FILESDIR"/bfd-ansidecl.patch
 
 	vala_src_prepare
-    eautoreconf
+	eautoreconf
 }
 
 src_configure() {

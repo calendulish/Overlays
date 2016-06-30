@@ -14,6 +14,7 @@ IUSE="$REQUIRED_USE"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 x86 arm"
+RESTRICT="primaryuri"
 
 RDEPEND="systemd? ( sys-apps/systemd )"
 

@@ -15,6 +15,7 @@ EGIT_REPO_URI="git://github.com/nsf/bmpanel2.git"
 SLOT=0
 KEYWORDS=""
 IUSE="python doc"
+RESTRICT="mirror"
 
 DEPEND="doc? ( app-text/docbook-xsl-stylesheets app-text/asciidoc )
 		dev-util/cmake

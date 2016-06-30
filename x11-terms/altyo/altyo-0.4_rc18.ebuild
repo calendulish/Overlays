@@ -13,6 +13,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 DOCS="AUTHORS COPYING README.md"
+RESTRICT="primaryuri"
 
 RDEPEND="x11-libs/vte:2.91[introspection,vala]
 		 >=x11-libs/gtk+-3.4

@@ -15,6 +15,7 @@ HOMEPAGE="https://github.com/ShyPixie/steam-tools"
 
 SLOT=0
 KEYWORDS="~amd64 ~x86"
+RESTRICT="primaryuri"
 
 DEPEND="${PYTHON_DEPS}
 		dev-python/setuptools[${PYTHON_USEDEP}]"

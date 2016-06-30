@@ -13,6 +13,7 @@ EGIT_REPO_URI="git://github.com/anrieff/$PN.git"
 
 KEYWORDS="~amd64 ~x86"
 SLOT=0
+RESTRICT="mirror"
 
 DEPEND="dev-vcs/git
 		 sys-devel/libtool

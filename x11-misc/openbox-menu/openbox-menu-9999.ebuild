@@ -8,12 +8,12 @@ inherit git-r3 python-single-r1
 
 DESCRIPTION="Openbox menu generator"
 HOMEPAGE="https://github.com/woho/openbox-menu"
+EGIT_REPO_URI="https://github.com/woho/openbox-menu.git"
 LICENSE="GPL-3"
 
 KEYWORDS=""
 SLOT="0"
-
-EGIT_REPO_URI="https://github.com/woho/openbox-menu.git"
+RESTRICT="binchecks mirror"
 
 RDEPEND="x11-wm/openbox:3
 		 ${PYTHON_DEPS}"
