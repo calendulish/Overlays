@@ -23,7 +23,7 @@ RDEPEND="gtk? ( x11-libs/gtk+:3 )
 		ncurses? ( sys-libs/ncurses )
 		pci? ( sys-apps/pciutils )
 		system? ( sys-process/procps )
-		cpuid? ( sys-libs/libcpuid )
+		cpuid? ( >=sys-libs/libcpuid-0.3.0 )
 		curl? ( net-misc/curl )
 		wget? ( net-misc/wget )"
 
@@ -41,7 +41,8 @@ src_configure() {
 							$(cmake-utils_use_with system LIBSYSTEM)
 							$(cmake-utils_use_with cpuid LIBCPUID)
 							$(cmake-utils_use_with dmidecode LIBDMI)
-							$(cmake-utils_use_with bandwidth LIBBDWT) )
+							$(cmake-utils_use_with bandwidth LIBBDWT)
+							$(cmake-utils_use_with curl LIBCURL) )
 
 		cmake-utils_src_configure
 	}

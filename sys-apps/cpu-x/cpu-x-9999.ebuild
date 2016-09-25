@@ -12,7 +12,7 @@ LICENSE="GPL-3"
 EGIT_REPO_URI="https://github.com/X0rg/$PN.git"
 
 SLOT=0
-IUSE="gtk +ncurses +cpuid +dmidecode +bandwidth +pci +system"
+IUSE="gtk +ncurses +cpuid +dmidecode +bandwidth +pci +system curl wget"
 RESTRICT="mirror"
 
 DEPEND="dev-util/cmake
@@ -22,7 +22,9 @@ RDEPEND="gtk? ( x11-libs/gtk+:3 )
 		ncurses? ( sys-libs/ncurses )
 		pci? ( sys-apps/pciutils )
 		system? ( sys-process/procps )
-		cpuid? ( =sys-libs/libcpuid-9999 )"
+		cpuid? ( =sys-libs/libcpuid-9999 )
+		curl? ( net-misc/curl )
+		wget? ( net-misc/wget )"
 
 S="$WORKDIR/$PN-$PV"
 
@@ -38,7 +40,8 @@ src_configure() {
 							$(cmake-utils_use_with system LIBSYSTEM)
 							$(cmake-utils_use_with cpuid LIBCPUID)
 							$(cmake-utils_use_with dmidecode LIBDMI)
-							$(cmake-utils_use_with bandwidth LIBBDWT) )
+							$(cmake-utils_use_with bandwidth LIBBDWT)
+							$(cmake-utils_use_with curl LIBCURL) )
 
 		cmake-utils_src_configure
 	}
