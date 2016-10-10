@@ -6,6 +6,6 @@
 		<name>Lara Maia</name>
 	</maintainer>
 	<upstream>
-		<remote-id type="sourceforge">projects/bmp-plugins.berlios/</remote-id>
+		<remote-id type="github">ShyPixie/cutedf</remote-id>
 	</upstream>
 </pkgmetadata>
