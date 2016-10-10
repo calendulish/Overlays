@@ -12,7 +12,7 @@ sys-app/
   └─ lm_sensors-f2a78m-conf [_[M]_](mailto:dev@lara.click)  
   └─ cpu-x [_[R]_](https://github.com/X0rg/CPU-X)  
 sys-fs/  
-  └─ cdf [_[R]_](http://sourceforge.net/projects/bmp-plugins.berlios/)  
+  └─ cutedf [_[R]_](http://github.com/ShyPixie/cutedf) [_[M]_](mailto:dev@lara.click)  
 sys-kernel/  
   └─ liquorix-sources [_[R]_](https://github.com/zen-kernel/zen-kernel/)   [_[M]_](mailto:steven@liquorix.net) [_[H]_](http://liquorix.net)  
 sys-libs/  
