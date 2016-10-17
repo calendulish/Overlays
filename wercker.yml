@@ -11,7 +11,7 @@ build:
                 bzcat portage-latest.tar.bz2 | tar -xf - -C /usr
                 mkdir -p /usr/portage/distfiles /usr/portage/metadata /usr/portage/packages
                 echo "gentoo" > /usr/portage/profiles/repo_name
-                emerge sync
+                emerge --sync
                 emerge repoman
                 repoman -Sd --without-mask full
 
