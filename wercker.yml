@@ -5,8 +5,8 @@ build:
 
         - script:
             name: Checking ebuilds
-            code: repoman -Sd --without-mask full
+            code: /usr/bin/repoman -Sd --without-mask full
 
         - script:
             name: Testing ebuild
-            code: find -iname '*.ebuild' -exec ebuild {} clean compile install \;
+            code: /usr/bin/find -iname '*.ebuild' -exec ebuild {} clean compile install \;
