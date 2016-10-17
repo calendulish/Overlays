@@ -10,11 +10,14 @@ build:
                 mkdir -p /usr
                 bzcat portage-latest.tar.bz2 | tar -xf - -C /usr
                 mkdir -p /usr/portage/distfiles /usr/portage/metadata /usr/portage/packages
-                echo "gentoo" > /usr/portage/profiles/repo_name
                 emerge --sync
-                emerge repoman
+                emerge git repoman
+                git clone https://github.com/ShyPixie/Overlays
+                cd Overlays
                 repoman -Sd --without-mask full
 
         - script:
             name: Testing ebuild
-            code: find -iname '*.ebuild' -exec ebuild {} clean compile install \;
+            code: |
+                cd Overlays
+                find -iname '*.ebuild' -exec ebuild {} clean compile install \;
