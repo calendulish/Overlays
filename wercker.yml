@@ -6,9 +6,7 @@ build:
         - script:
             name: Checking ebuilds
             code: |
-                ls /bin
-                ls /usr/bin
-                curl -o portage-latest.tar.bz2 http://distfiles.gentoo.org/snapshots/portage-latest.tar.bz2
+                wget http://distfiles.gentoo.org/snapshots/portage-latest.tar.bz2
                 mkdir -p /usr
                 bzcat /portage-latest.tar.bz2 | tar -xf - -C /usr
                 mkdir -p /usr/portage/distfiles /usr/portage/metadata /usr/portage/packages
