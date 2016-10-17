@@ -5,7 +5,9 @@ build:
 
         - script:
             name: Checking ebuilds
-            code: /usr/bin/repoman -Sd --without-mask full
+            code: |
+                /usr/bin/emerge repoman
+                /usr/bin/repoman -Sd --without-mask full
 
         - script:
             name: Testing ebuild
