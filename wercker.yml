@@ -1,0 +1,12 @@
+box: gentoo/stage3-amd64
+
+build:
+    steps:
+
+        - script:
+            name: Checking ebuilds
+            code: repoman -Sd --without-mask full
+
+        - script:
+            name: Testing ebuild
+            code: find -iname '*.ebuild' -exec ebuild {} clean compile install \;
