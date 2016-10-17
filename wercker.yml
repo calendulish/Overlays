@@ -11,7 +11,7 @@ build:
                 bzcat portage-latest.tar.bz2 | tar -xf - -C /usr
                 mkdir -p /usr/portage/distfiles /usr/portage/metadata /usr/portage/packages
                 emerge --sync
-                emerge git repoman
+                emerge dev-vcs/git repoman
                 git clone https://github.com/ShyPixie/Overlays
                 cd Overlays
                 repoman -Sd --without-mask full
