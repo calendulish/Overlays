@@ -6,9 +6,12 @@ build:
         - script:
             name: Checking ebuilds
             code: |
-                /usr/bin/emerge repoman
-                /usr/bin/repoman -Sd --without-mask full
+                mkdir -p /usr/portage/profiles
+                echo "gentoo" > /usr/portage/profiles/repo_name
+                emerge sync
+                emerge repoman
+                repoman -Sd --without-mask full
 
         - script:
             name: Testing ebuild
-            code: /usr/bin/find -iname '*.ebuild' -exec ebuild {} clean compile install \;
+            code: find -iname '*.ebuild' -exec ebuild {} clean compile install \;
