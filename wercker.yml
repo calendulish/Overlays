@@ -8,7 +8,7 @@ build:
             code: |
                 wget http://distfiles.gentoo.org/snapshots/portage-latest.tar.bz2
                 mkdir -p /usr
-                bzcat /portage-latest.tar.bz2 | tar -xf - -C /usr
+                bzcat portage-latest.tar.bz2 | tar -xf - -C /usr
                 mkdir -p /usr/portage/distfiles /usr/portage/metadata /usr/portage/packages
                 echo "gentoo" > /usr/portage/profiles/repo_name
                 emerge sync
