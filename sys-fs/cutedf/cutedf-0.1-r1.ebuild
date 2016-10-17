@@ -11,3 +11,7 @@ SRC_URI="https://github.com/ShyPixie/$PN/archive/v$PV.tar.gz"
 
 KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 SLOT=0
+
+src_install (){
+	emake PREFIX="/usr" DESTDIR="$D" install
+}
