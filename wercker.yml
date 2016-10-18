@@ -20,4 +20,6 @@ build:
             name: Testing ebuild
             code: |
                 cd Overlays
-                find -iname '*.ebuild' -exec ebuild {} clean compile install \;
+                for file in $(find . -iname '*.ebuild'); do
+                    ebuild $file clean compile install qmerge || break;
+                done
