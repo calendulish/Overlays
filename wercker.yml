@@ -2,24 +2,35 @@ box: gentoo/stage3-amd64
 
 build:
     steps:
-
         - script:
-            name: Checking ebuilds
+            name: Sync portage
             code: |
                 wget http://distfiles.gentoo.org/snapshots/portage-latest.tar.bz2
                 mkdir -p /usr
                 bzcat portage-latest.tar.bz2 | tar -xf - -C /usr
                 mkdir -p /usr/portage/distfiles /usr/portage/metadata /usr/portage/packages
                 emerge --sync
-                emerge dev-vcs/git repoman
+
+        - script:
+            name: Installing dependencies
+            code: |
+                emerge -n dev-vcs/git app-portage/repoman
+                
+        - script:
+            name: Cloning Overlay
+            code: |
                 git clone https://github.com/ShyPixie/Overlays
+
+        - script:
+            name: Checking ebuilds
+            code: |
                 cd Overlays
                 repoman -Sd --without-mask full
 
         - script:
-            name: Testing ebuild
+            name: Installing ebuilds
             code: |
                 cd Overlays
-                for file in $(find . -iname '*.ebuild'); do
-                    ebuild $file clean compile install qmerge || break;
-                done
+                mkdir -p /etc/portage/repos.conf
+                echo -e "[ShyPixie]\nlocation = $(pwd)\nmasters = gentoo\nauto-sync = no" | tee /etc/portage/repos.conf/shypixie.conf
+                emerge $(find -iname '*.ebuild' | cut -d'/' -f2-3 | awk '!a[$0]++' | awk '{print $0"::ShyPixie"}')
