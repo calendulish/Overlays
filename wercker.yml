@@ -1,21 +1,7 @@
-box: gentoo/stage3-amd64
+box: shypixie/gentoo
 
 build:
-    steps:
-        - script:
-            name: Sync portage
-            code: |
-                wget http://distfiles.gentoo.org/snapshots/portage-latest.tar.bz2
-                mkdir -p /usr
-                bzcat portage-latest.tar.bz2 | tar -xf - -C /usr
-                mkdir -p /usr/portage/distfiles /usr/portage/metadata /usr/portage/packages
-                emerge --sync
-
-        - script:
-            name: Installing dependencies
-            code: |
-                emerge -n dev-vcs/git app-portage/repoman
-                
+    steps:                
         - script:
             name: Cloning Overlay
             code: |
