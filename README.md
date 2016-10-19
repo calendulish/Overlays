@@ -21,6 +21,7 @@ x11-misc/
   └─ bmpanel2 [_[R]_](https://code.google.com/p/bmpanel2) [_[M]_](mailto:no.smile.face@gmail.com)  
   └─ cairo-compmgr [_[R]_](https://github.com/gandalfn/Cairo-Composite-Manager/)   [_[M]_](mailto:gandalfn@club-internet.fr)  
   └─ openbox-menu [_[R]_](https://github.com/woho/openbox-menu/)  
+  └─ startx-systemd [_[M]_](mailto:dev@lara.click)  
 x11-terms  
   └─ altyo [_[R]_](https://github.com/linvinus/AltYo/) [_[M]_](mailto:linvinus@gmail.com)  
 

@@ -1,0 +1,19 @@
+[Unit]
+After=getty.target
+Conflicts=getty@tty8.service
+
+[Service]
+ExecStart=/sbin/mingetty --autologin %I --loginprog=/usr/bin/login_x11_wrapper --noclear tty8 38400
+Type=idle
+KillMode=process
+SendSIGHUP=yes
+StandardInput=tty-force
+StandardOutput=tty
+StandardError=tty
+TTYVTDisallocate=yes
+TTYReset=yes
+TTYHangup=yes
+TTYPath=/dev/tty8
+
+[Install]
+Alias=multi-user.target.wants/startx@%i.service
