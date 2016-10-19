@@ -16,8 +16,8 @@ DOCS="AUTHORS COPYING README.md"
 RESTRICT="mirror"
 
 RDEPEND="x11-libs/vte:2.91[introspection,vala]
-		 >=x11-libs/gtk+-3.4
-		 >=dev-libs/glib-2.32"
+		 x11-libs/gtk+:3
+		 dev-libs/glib:2"
 
 DEPEND="${RDEPEND}
 		dev-vcs/git
