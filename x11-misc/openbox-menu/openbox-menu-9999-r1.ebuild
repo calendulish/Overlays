@@ -3,7 +3,7 @@
 # $Id$
 
 EAPI="5"
-PYTHON_COMPAT=( python3_3 )
+PYTHON_COMPAT=( python3_4 python3_5 )
 inherit git-r3 python-single-r1
 
 DESCRIPTION="Openbox menu generator"
