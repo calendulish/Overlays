@@ -1,4 +1,4 @@
-Gentoo Overlays © 2015 Lara Maia [dev@lara.click](mailto:dev@lara.click)
+Gentoo Overlays © 2015~2017 Lara Maia [dev@lara.click](mailto:dev@lara.click)
 
 # Current Ebuilds:
 
@@ -9,7 +9,6 @@ games-util/
 net-misc/   
   └─ nullidentdmod [_[R]_](https://github.com/Acidhub/nullidentdmod)  
 sys-app/  
-  └─ lm_sensors-f2a78m-conf [_[M]_](mailto:dev@lara.click)  
   └─ cpu-x [_[R]_](https://github.com/X0rg/CPU-X)  
 sys-fs/  
   └─ cutedf [_[R]_](http://github.com/ShyPixie/cutedf) [_[M]_](mailto:dev@lara.click)  
