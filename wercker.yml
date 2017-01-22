@@ -5,7 +5,7 @@ build:
 
         - script:
             name: Checking ebuilds
-            code: repoman -Sd --without-mask full
+            code: $(which repoman) -Sd --without-mask full
 
         - script:
             name: Testing ebuild
