@@ -22,6 +22,7 @@ build:
                 echo "*/*::ShyPixie **" | tee /etc/portage/package.accept_keywords/shypixie
                 emerge @preserved-rebuild
                 emerge -uN --nodeps readline
-                emerge -C virtual/perl-JSON-PP
+                emerge -C $(qlist -IC virtual/perl)
+                emerge -uN --nodeps dev-lang/python:2
                 emerge -uDN --with-bdeps=y @world
                 emerge $(find -iname '*.ebuild' | cut -d'/' -f2-3 | awk '!a[$0]++' | awk '{print $0"::ShyPixie"}')
