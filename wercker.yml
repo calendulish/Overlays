@@ -24,7 +24,7 @@ build:
                 emerge -uN --nodeps readline
                 emerge -C $(qlist -IC virtual/perl)
                 emerge @preserved-rebuild
-                echo "sys-apps/util-linux -systemd build" >> /etc/portage/package.use/util-linux
+                echo "sys-apps/util-linux -systemd -udev build" >> /etc/portage/package.use/util-linux
                 emerge -uDN --with-bdeps=y @world
                 perl-cleaner --reallyall
                 rm -fv /etc/portage/package.use/util-linux
