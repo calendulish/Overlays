@@ -20,6 +20,7 @@ build:
                 mkdir -p /etc/portage/{repos.conf,package.accept_keywords}
                 echo -e "[ShyPixie]\nlocation = $(pwd)\nmasters = gentoo\nauto-sync = no" | tee /etc/portage/repos.conf/shypixie.conf
                 echo "*/*::ShyPixie **" | tee /etc/portage/package.accept_keywords/shypixie
+                rm -fv /sbin/unix_chkpwd
                 emerge -uN --nodeps readline
                 emerge @preserved-rebuild
                 perl-cleaner --reallyall
