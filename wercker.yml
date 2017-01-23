@@ -21,7 +21,7 @@ build:
                 echo -e "[ShyPixie]\nlocation = $(pwd)\nmasters = gentoo\nauto-sync = no" | tee /etc/portage/repos.conf/shypixie.conf
                 echo "*/*::ShyPixie **" | tee /etc/portage/package.accept_keywords/shypixie
                 emerge -uN --nodeps readline
-                emerge -C $(qlist -IC virtual/perl)
                 emerge @preserved-rebuild
+                perl-cleaner --reallyall
                 emerge -uDN --with-bdeps=y @world
                 emerge $(find -iname '*.ebuild' | cut -d'/' -f2-3 | awk '!a[$0]++' | awk '{print $0"::ShyPixie"}')
