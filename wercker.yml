@@ -22,7 +22,8 @@ build:
                 echo "*/*::ShyPixie **" | tee /etc/portage/package.accept_keywords/shypixie
                 rm -fv /sbin/unix_chkpwd
                 emerge -uN --nodeps readline
+                emerge -C $(qlist -IC virtual/perl)
                 emerge @preserved-rebuild
-                perl-cleaner --reallyall
                 emerge -uDN --with-bdeps=y @world
+                perl-cleaner --reallyall
                 emerge $(find -iname '*.ebuild' | cut -d'/' -f2-3 | awk '!a[$0]++' | awk '{print $0"::ShyPixie"}')
