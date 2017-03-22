@@ -24,4 +24,4 @@ x11-misc/
 x11-terms  
   └─ altyo [_[R]_](https://github.com/linvinus/AltYo/) [_[M]_](mailto:linvinus@gmail.com)  
 
-[![Build Status](https://travis-ci.org/ShyPixie/Overlays.svg?branch=master)](https://travis-ci.org/ShyPixie/Overlays) [![Wercker Status](https://app.wercker.com/status/35f1a742f38c0208030a3144f7858216/s/master "wercker status")](https://app.wercker.com/project/byKey/35f1a742f38c0208030a3144f7858216) [![Love](https://img.shields.io/badge/BUILT%20WITH-Love-red.svg)](http://lara.click)
+[![Love](https://img.shields.io/badge/BUILT%20WITH-Love-red.svg)](http://lara.click)
