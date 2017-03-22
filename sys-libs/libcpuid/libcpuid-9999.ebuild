@@ -1,6 +1,5 @@
 # Lara Maia <dev@lara.click> 2014~2016
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=5
 inherit git-r3 autotools
