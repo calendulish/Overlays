@@ -1,7 +1,0 @@
-#!/bin/sh
-
-# Fix restart
-sleep 3
-
-# login and call startx
-exec /bin/login "$@" STARTX11=1

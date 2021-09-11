@@ -1,7 +1,7 @@
 # Lara Maia <dev@lara.click> 2014~2016
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=8
 
 DESCRIPTION="Create a backup of your config files in tree format"
 HOMEPAGE="https://github.com/ShyPixie/backup-conf"
@@ -12,14 +12,13 @@ SRC_URI="https://github.com/ShyPixie/$PN/archive/v$PV.tar.gz"
 KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 
 SLOT=0
-IUSE="git"
+IUSE="git sudo"
 RESTRICT="binchecks primaryuri"
 
-RDEPEND="app-misc/colordiff
-		 sys-devel/gettext
-		 app-admin/sudo
+RDEPEND="sys-devel/gettext
 		 sys-apps/util-linux
-		 git? ( dev-vcs/git )"
+		 git? ( dev-vcs/git )
+		 sudo? ( app-admin/sudo )"
 DEPEND="app-arch/tar"
 
 pkg_postinst() {

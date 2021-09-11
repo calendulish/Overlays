@@ -2,12 +2,12 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>dev@lara.click</email>
+		<email>dev@lara.monster</email>
 		<name>Lara Maia</name>
 	</maintainer>
 	<upstream>
 		<maintainer>
-			<email>dev@lara.click</email>
+			<email>dev@lara.monster</email>
 			<name>Lara Maia</name>
 		</maintainer>
 		<bugs-to>https://github.com/ShyPixie/backup-conf/issues</bugs-to>

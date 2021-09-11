@@ -2,6 +2,9 @@ box: gentoo/stage3-amd64
 
 build:
     steps:
+        - script:
+            name: Installing repoman
+            code: emerge repoman
 
         - script:
             name: Checking ebuilds
