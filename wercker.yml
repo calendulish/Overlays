@@ -1,10 +1,10 @@
-box: gentoo/stage3-amd64
+box: gentoo/stage3:systemd
 
 build:
     steps:
         - script:
             name: Installing repoman
-            code: emerge repoman
+            code: emerge --sync && emerge repoman
 
         - script:
             name: Checking ebuilds
