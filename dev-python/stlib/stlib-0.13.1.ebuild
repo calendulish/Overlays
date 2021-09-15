@@ -1,4 +1,4 @@
-# Lara Maia <dev@lara.click> 2014~2016
+# Lara Maia <dev@lara.monster> 2021
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
@@ -7,8 +7,8 @@ inherit python-r1 distutils-r1
 
 SRC_URI="https://github.com/ShyPixie/$PN/archive/v$PV.tar.gz"
 LICENSE="GPL-3"
-DESCRIPTION="Some useful tools for use with steam client or compatible programs, websites"
-HOMEPAGE="https://github.com/ShyPixie/steam-tools"
+DESCRIPTION="Async library that provides features related to Steam client and compatible stuff"
+HOMEPAGE="https://github.com/ShyPixie/stlib"
 
 SLOT=0
 KEYWORDS="~amd64 ~x86 ~ia64 ~arm"
@@ -21,10 +21,10 @@ RDEPEND="${PYTHON_DEPS}
          dev-python/beautifulsoup4[${PYTHON_USEDEP}]
          dev-python/rsa[${PYTHON_USEDEP}]
          dev-python/aiohttp[${PYTHON_USEDEP}]
-         steamworks-sdk? ( dev-libs/steamworks-sdk[${PYTHON_USEDEP}] )"
+         steamworks-sdk? ( dev-util/steamworks-sdk )"
 
 S="$WORKDIR"/$PN-${PV/_/-}
 
 python_compile() {
-    distutils-r1_python_compile $(usex steamworks-sdk "" "--disable-steam-api")
+    SDK_PATH=/opt/steamworks-sdk distutils-r1_python_compile $(usex steamworks-sdk "" "--disable-steam-api")
 }
