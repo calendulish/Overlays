@@ -13,6 +13,7 @@ EGIT_REPO_URI="https://github.com/ShyPixie/steam-tools-ng.git"
 SLOT=0
 KEYWORDS="~amd64 ~x86 ~ia64 ~arm"
 RESTRICT="primaryuri"
+IUSE="plugins"
 
 DEPEND="${PYTHON_DEPS}
         dev-python/setuptools[${PYTHON_USEDEP}]
@@ -22,5 +23,5 @@ RDEPEND="${PYTHON_DEPS}
          dev-python/aiohttp[${PYTHON_USEDEP}]
          dev-python/pygobject[${PYTHON_USEDEP}]
          dev-python/stlib[steamworks-sdk,${PYTHON_USEDEP}]
-         dev-python/stlib-plugins[${PYTHON_USEDEP}]
+         plugins? ( dev-python/stlib-plugins[${PYTHON_USEDEP}] )
          x11-misc/xdg-utils"
