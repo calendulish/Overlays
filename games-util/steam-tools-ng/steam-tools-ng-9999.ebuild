@@ -2,7 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
-PYTHON_COMPAT=( python3_{7,8,9,10} )
+DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=( python3_{9..11} )
 inherit python-r1 git-r3 distutils-r1
 
 LICENSE="GPL-3"
@@ -16,7 +17,6 @@ RESTRICT="primaryuri"
 IUSE="plugins"
 
 DEPEND="${PYTHON_DEPS}
-        dev-python/setuptools[${PYTHON_USEDEP}]
         sys-devel/gettext"
 RDEPEND="${PYTHON_DEPS}
          dev-python/certifi[${PYTHON_USEDEP}]
