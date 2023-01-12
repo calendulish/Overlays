@@ -2,29 +2,34 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
-PYTHON_COMPAT=( python3_{7,8,9,10} )
+DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=( python3_{9..11} )
 inherit python-r1 distutils-r1
 
-SRC_URI="https://github.com/ShyPixie/$PN/archive/v$PV.tar.gz"
+SRC_URI="https://github.com/ShyPixie/$PN/archive/v$PV.tar.gz -> $P.gh.tar.gz"
 LICENSE="GPL-3"
 DESCRIPTION="Async library that provides features related to Steam client and compatible stuff"
 HOMEPAGE="https://github.com/ShyPixie/stlib"
 
 SLOT=0
 KEYWORDS="~amd64 ~x86 ~ia64 ~arm"
-RESTRICT="primaryuri"
-IUSE="steamworks-sdk"
+RESTRICT="primaryuri
+          strip
+          !test? ( test )"
+IUSE="steamworks-sdk debug test"
+REQUIRED_USE="test? ( debug )"
 
-DEPEND="${PYTHON_DEPS}
-        dev-python/setuptools[${PYTHON_USEDEP}]"
 RDEPEND="${PYTHON_DEPS}
          dev-python/beautifulsoup4[${PYTHON_USEDEP}]
          dev-python/rsa[${PYTHON_USEDEP}]
          dev-python/aiohttp[${PYTHON_USEDEP}]
          steamworks-sdk? ( dev-util/steamworks-sdk )"
+DEPEND="${PYTHON_DEPS}
+        test? ( ${RDEPEND} )"
 
-S="$WORKDIR"/$PN-${PV/_/-}
+distutils_enable_tests pytest
 
 python_compile() {
-    SDK_PATH=/opt/steamworks-sdk distutils-r1_python_compile $(usex steamworks-sdk "" "--disable-steam-api")
+    use steamworks-sdk && export SDK_PATH=/opt/steamworks-sdk
+	distutils-r1_python_compile
 }
