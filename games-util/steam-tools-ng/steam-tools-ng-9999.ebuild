@@ -13,11 +13,11 @@ EGIT_REPO_URI="https://github.com/ShyPixie/steam-tools-ng.git"
 
 SLOT=0
 KEYWORDS="~amd64 ~x86 ~ia64 ~arm"
-RESTRICT="primaryuri"
-IUSE="plugins"
+RESTRICT="primaryuri
+          !test? ( test )"
+IUSE="plugins debug test"
+REQUIRED_USE="test? ( debug )"
 
-DEPEND="${PYTHON_DEPS}
-        sys-devel/gettext"
 RDEPEND="${PYTHON_DEPS}
          dev-python/certifi[${PYTHON_USEDEP}]
          dev-python/aiohttp[${PYTHON_USEDEP}]
@@ -25,3 +25,8 @@ RDEPEND="${PYTHON_DEPS}
          dev-python/stlib[steamworks-sdk,${PYTHON_USEDEP}]
          plugins? ( dev-python/stlib-plugins[${PYTHON_USEDEP}] )
          x11-misc/xdg-utils"
+DEPEND="${PYTHON_DEPS}
+        sys-devel/gettext
+        test? ( ${RDEPEND} )"
+
+distutils_enable_tests pytest
