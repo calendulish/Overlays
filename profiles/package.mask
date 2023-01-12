@@ -1,1 +1,2 @@
 =sys-libs/libcpuid-9999
+=games-util/steam-tools-ng-9999
