@@ -21,10 +21,10 @@ REQUIRED_USE="test? ( debug )"
 RDEPEND="${PYTHON_DEPS}
          dev-python/certifi[${PYTHON_USEDEP}]
          dev-python/aiohttp[${PYTHON_USEDEP}]
-         dev-python/pygobject[${PYTHON_USEDEP}]
          >=dev-python/stlib-1.1[steamworks-sdk,${PYTHON_USEDEP}]
          plugins? ( >=dev-python/stlib-plugins-1.1[${PYTHON_USEDEP}] )
-         x11-misc/xdg-utils"
+         x11-misc/xdg-utils
+         >=gui-libs/gtk-4.0"
 DEPEND="${PYTHON_DEPS}
         sys-devel/gettext
         test? ( ${RDEPEND} )"
