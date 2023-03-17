@@ -8,8 +8,8 @@ inherit python-r1 git-r3 distutils-r1
 
 LICENSE="GPL-3"
 DESCRIPTION="Some useful tools for use with steam client or compatible programs, websites"
-HOMEPAGE="https://github.com/ShyPixie/steam-tools-ng"
-EGIT_REPO_URI="https://github.com/ShyPixie/steam-tools-ng.git"
+HOMEPAGE="https://github.com/calendulish/steam-tools-ng"
+EGIT_REPO_URI="https://github.com/calendulish/steam-tools-ng.git"
 
 SLOT=0
 KEYWORDS="~amd64 ~x86 ~ia64 ~arm"

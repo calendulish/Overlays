@@ -10,7 +10,7 @@
             <email>dev@lara.monster</email>
             <name>Lara Maia</name>
         </maintainer>
-        <bugs-to>https://github.com/ShyPixie/stlib-plugins/issues</bugs-to>
-        <remote-id type="github">ShyPixie/stlib-plugins</remote-id>
+        <bugs-to>https://github.com/calendulish/stlib-plugins/issues</bugs-to>
+        <remote-id type="github">calendulish/stlib-plugins</remote-id>
     </upstream>
 </pkgmetadata>

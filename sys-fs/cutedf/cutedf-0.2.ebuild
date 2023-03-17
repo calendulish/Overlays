@@ -4,9 +4,9 @@
 EAPI=8
 
 DESCRIPTION="This is an colored and cute version of df"
-HOMEPAGE="https://github.com/ShyPixie/cutedf"
+HOMEPAGE="https://github.com/calendulish/cutedf"
 LICENSE="GPL-2"
-SRC_URI="https://github.com/ShyPixie/$PN/archive/v$PV.tar.gz"
+SRC_URI="https://github.com/calendulish/$PN/archive/v$PV.tar.gz"
 
 KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 SLOT=0

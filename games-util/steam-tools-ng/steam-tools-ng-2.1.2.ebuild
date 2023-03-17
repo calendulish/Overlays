@@ -8,8 +8,8 @@ inherit python-r1 distutils-r1
 
 LICENSE="GPL-3"
 DESCRIPTION="Some useful tools for use with steam client or compatible programs, websites"
-HOMEPAGE="https://github.com/ShyPixie/steam-tools-ng"
-SRC_URI="https://github.com/ShyPixie/$PN/archive/v$PV.tar.gz -> $P.gh.tar.gz"
+HOMEPAGE="https://github.com/calendulish/steam-tools-ng"
+SRC_URI="https://github.com/calendulish/$PN/archive/v$PV.tar.gz -> $P.gh.tar.gz"
 
 SLOT=0
 KEYWORDS="~amd64 ~x86 ~ia64 ~arm"

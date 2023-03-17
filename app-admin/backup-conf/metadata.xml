@@ -10,7 +10,7 @@
 			<email>dev@lara.monster</email>
 			<name>Lara Maia</name>
 		</maintainer>
-		<bugs-to>https://github.com/ShyPixie/backup-conf/issues</bugs-to>
-		<remote-id type="github">ShyPixie/backup-conf</remote-id>
+		<bugs-to>https://github.com/calendulish/backup-conf/issues</bugs-to>
+		<remote-id type="github">calendulish/backup-conf</remote-id>
 	</upstream>
 </pkgmetadata>

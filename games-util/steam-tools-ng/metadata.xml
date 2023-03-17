@@ -10,7 +10,7 @@
             <email>dev@lara.monster</email>
             <name>Lara Maia</name>
         </maintainer>
-        <bugs-to>https://github.com/ShyPixie/steam-tools-ng/issues</bugs-to>
-        <remote-id type="github">ShyPixie/steam-tools-ng</remote-id>
+        <bugs-to>https://github.com/calendulish/steam-tools-ng/issues</bugs-to>
+        <remote-id type="github">calendulish/steam-tools-ng</remote-id>
     </upstream>
 </pkgmetadata>

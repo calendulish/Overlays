@@ -10,7 +10,7 @@
             <email>dev@lara.monster</email>
             <name>Lara Maia</name>
         </maintainer>
-        <bugs-to>https://github.com/ShyPixie/cutedf/issues</bugs-to>
-        <remote-id type="github">ShyPixie/cutedf</remote-id>
+        <bugs-to>https://github.com/calendulish/cutedf/issues</bugs-to>
+        <remote-id type="github">calendulish/cutedf</remote-id>
     </upstream>
 </pkgmetadata>

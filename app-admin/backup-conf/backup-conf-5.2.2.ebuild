@@ -4,10 +4,10 @@
 EAPI=8
 
 DESCRIPTION="Create a backup of your config files in tree format"
-HOMEPAGE="https://github.com/ShyPixie/backup-conf"
+HOMEPAGE="https://github.com/calendulish/backup-conf"
 LICENSE="GPL-3"
 
-SRC_URI="https://github.com/ShyPixie/$PN/archive/v$PV.tar.gz"
+SRC_URI="https://github.com/calendulish/$PN/archive/v$PV.tar.gz"
 
 KEYWORDS="~amd64 ~ia64 ~x86 ~arm"
 
