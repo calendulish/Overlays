@@ -9,7 +9,12 @@ inherit python-r1 distutils-r1
 LICENSE="GPL-3"
 DESCRIPTION="Some useful tools for use with steam client or compatible programs, websites"
 HOMEPAGE="https://github.com/calendulish/steam-tools-ng"
-SRC_URI="https://github.com/calendulish/$PN/archive/v$PV.tar.gz -> $P.gh.tar.gz"
+SRC_URI="https://github.com/calendulish/$PN/archive/v$PV.tar.gz -> $P.gh.tar.gz
+         https://github.com/calendulish/$PN/commit/b49deac04211c6c010a6db0f3b9cc06a646fd0c1.patch"
+
+PATCHES=(
+    "${DISTDIR}/b49deac04211c6c010a6db0f3b9cc06a646fd0c1.patch"
+)
 
 SLOT=0
 KEYWORDS="~amd64 ~x86 ~ia64 ~arm"
