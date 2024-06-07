@@ -3,7 +3,7 @@
 
 EAPI="8"
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{9..13} )
 inherit python-r1 git-r3 distutils-r1
 
 LICENSE="GPL-3"
@@ -27,6 +27,7 @@ RDEPEND="${PYTHON_DEPS}
          >=gui-libs/gtk-4.0"
 DEPEND="${PYTHON_DEPS}
         sys-devel/gettext
+		dev-python/python-gettext[${PYTHON_USEDEP}]
         test? ( ${RDEPEND} )"
 
 distutils_enable_tests pytest
