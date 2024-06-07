@@ -4,7 +4,8 @@ Gentoo Overlays © 2021 Lara Maia [dev@lara.monster](mailto:dev@lara.monster)
 
 app-admin/  
   └─ backup-conf [_[R]_](https://github.com/calendulish/backup-conf) [_[M]_](mailto:dev@lara.monster)  
-dev-python/  
+dev-python/ 
+  └─ python-gettext [_[R]_](https://github.com/hannosch/python-gettext) [_[M]_](mailto:hanno@hannosch.eu)
   └─ stlib [_[R]_](https://github.com/calendulish/stlib) [_[M]_](mailto:dev@lara.monster)  
   └─ stlib-plugins [_[R]_](https://github.com/calendulish/stlib-plugins) [_[M]_](mailto:dev@lara.monster)  
 dev-util/  
