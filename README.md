@@ -13,6 +13,6 @@ dev-util/
 games-util/  
   └─ steam-tools-ng [_[R]_](https://github.com/calendulish/steam-tools-ng) [_[M]_](mailto:dev@lara.monster)  
 sys-fs/  
-  └─ cutedf [_[R]_](http://github.com/calendulish/cutedf) [_[M]_](mailto:dev@lara.monster)  
+  └─ colordf [_[R]_](http://github.com/calendulish/colordf) [_[M]_](mailto:dev@lara.monster)  
 
 [![Made with](https://img.shields.io/badge/made%20with-girl%20power-f070D0.svg?longCache=true&style=for-the-badge)](http://lara.monster)
