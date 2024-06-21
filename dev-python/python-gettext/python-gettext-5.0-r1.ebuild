@@ -14,8 +14,12 @@ HOMEPAGE="https://github.com/hannosch/python-gettext"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86"
-RESTRICT="test"
+RESTRICT="!test? ( test )"
+IUSE="debug test"
+REQUIRED_USE="test? ( debug )"
 
 RDEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
          sys-devel/gettext"
+DEPEND="test? ( ${RDEPEND} )"
 
+distutils_enable_tests pytest
