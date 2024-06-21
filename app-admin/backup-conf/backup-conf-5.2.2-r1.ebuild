@@ -22,8 +22,10 @@ RDEPEND="sys-devel/gettext
 DEPEND="app-arch/tar"
 
 pkg_postinst() {
-	ewarn "Example of configuration file installed on"
+	ewarn "Example file installed on:"
 	ewarn "/usr/share/backup-conf/backup-conf.conf.example"
-	ewarn 'copy to $XDG_CONFIG_HOME/backup-conf.conf or'
-	ewarn "/etc/backup-conf.conf, and edit with you files/directories."
+	ewarn "Create a file with your files/directories"
+	ewarn "and copy to one of the valid config paths:"
+	ewarn "${XDG_CONFIG_HOME:-~/.config}/backup-conf.conf"
+	ewarn "/etc/backup-conf.conf"
 }
