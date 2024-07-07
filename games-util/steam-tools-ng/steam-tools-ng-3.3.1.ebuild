@@ -27,7 +27,7 @@ RDEPEND="${PYTHON_DEPS}
          >=gui-libs/gtk-4.0"
 DEPEND="${PYTHON_DEPS}
         sys-devel/gettext
-        dev-python/python-gettext[${PYTHON_USEDEP}]
+        dev-python/setuptools-gettext[${PYTHON_USEDEP}]
         test? ( ${RDEPEND} )"
 
 distutils_enable_tests pytest
